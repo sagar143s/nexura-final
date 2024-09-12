@@ -12,11 +12,12 @@ import Header1Multipage from "@/components/headers/Header1Multipage";
 import { menuItemsDark } from "@/data/menu";
 import Footer1 from "@/components/footers/Footer1";
 export const metadata = {
-  title:
-    "Nexura It Technology",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Nexura IT Solutions | Dubai's Leading IT Experts",
+  description: "Nexura IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
+  keywords: "Nexura IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
 };
+
+
 export default function Home1MainDemoMultiPageDark() {
   return (
     <>
