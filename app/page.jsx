@@ -32,7 +32,7 @@ export default function Home1MainDemoMultiPageDark() {
                 className="home-section bg-dark-1 bg-dark-alpha-90 light-content parallax-5 parallax-mousemove-scene scrollSpysection"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/full-width-images/section-bg-2.jpg)",
+                    "url(/assets/images/full-width-images/banner.jpg)",
                 }}
                 id="home"
               >
