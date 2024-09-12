@@ -336,11 +336,11 @@ export default function Home1({ onePage = false, dark = false }) {
       </section>
 
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
+      {/* <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
         <Promo />{" "}
-      </section>
+      </section> */}
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       {/* <section
         className={`page-section  scrollSpysection  ${
@@ -381,14 +381,14 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <NewsLetter />
       </section> */}
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         }`}
         id="contact"
       >
         <Contact />{" "}
-      </section>
+      </section> */}
     </>
   );
 }
