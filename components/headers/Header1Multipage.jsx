@@ -15,14 +15,14 @@ export default function Header1Multipage({ links }) {
       <div className="nav-logo-wrap local-scroll">
         <Link href={`/`} className="logo">
           <Image
-            src="/assets/images/logo.png"
+            src="/assets/images/logowhite.png"
             alt="Your Company Logo"
             width={180}
             height={50}
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/logowhite.png"
+            src="/assets/images/logo.png"
             alt="Your Company Logo"
             width={180}
             height={50}
