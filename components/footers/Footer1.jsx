@@ -16,39 +16,44 @@ export default function Footer1({ dark = false }) {
           <div className="col-md-4 col-lg-3 text-gray mb-sm-50">
             <Link href={"/"} className="mb-30">
               <Image
-                src="/assets/images/logo-dark.svg"
-                width={105}
-                height={34}
+                src="/assets/images/logof.png"
+                width={185}
+                height={50}
                 className="light-mode-logo"
                 alt="Your Company Logo"
               />
 
               <Image
-                src="/assets/images/logo-white.svg"
-                width={105}
-                height={34}
+                src="/assets/images/logof.png"
+                width={185}
+                height={50}
                 className="dark-mode-logo"
                 alt="Your Company Logo"
               />
             </Link>
             <p>
-              Integer auctor aliquet martor, sed lorem malesuada eros blandit
-              eget. Proin lacinia mortoc id odio vestibulum.
-            </p>
+            601, B Block, Business Village, Deira Clock Tower             </p>
             <div className="clearlinks">
-              <strong>T.</strong>
-              <a href="tel:+18376528800">+1 837 652 8800</a>
+             
+             
+              {/* <strong>  : </strong> */}
+  <a href="tel:+971507052116">+971 507052116</a>
+  <br/>
+
+  <a href="tel:+971552949444">+971 552949444</a>
+
+
             </div>
             <div className="clearlinks">
-              <strong>E.</strong>
-              <a href="mailto:ibthemes21@gmail.com">ibthemes21@gmail.com</a>
+              <strong>EMAIL : </strong>
+              <a href="mailto:info@nexura.ae">info@nexura.ae</a>
             </div>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2">
             <div className="row mt-n30">
               {/* Footer Widget */}
               <div className="col-sm-4 mt-30">
-                <h3 className="fw-title">Company</h3>
+                <h3 className="fw-title">QUICK LINKS</h3>
                 <ul className="fw-menu clearlist local-scroll">
                   {navigationLinks.map((elm, i) => (
                     <li key={i}>
@@ -84,10 +89,10 @@ export default function Footer1({ dark = false }) {
         {/* Footer Text */}
         <div className="row text-gray">
           <div className="col-md-4 col-lg-3">
-            <b>© IB-Themes {new Date().getFullYear()}.</b>
+          <b>© {new Date().getFullYear()} Nexura IT Solutions</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-            <b>Based in London, United Kingdom.</b>
+            {/* <b>Based in London, United Kingdom.</b> */}
             {/* Back to Top Link */}
             <div className="local-scroll float-end mt-n20 mt-sm-10">
               <a href="#top" className="link-to-top">
