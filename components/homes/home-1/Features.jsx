@@ -70,7 +70,7 @@ export default function Features() {
                   <div className="features-title">Effortless Integration                  </div>
                   <div className="features-descr">
                   Enjoy seamless, user-friendly solutions that enhance your workflow and boost productivity, making complex tasks simple and efficient.</div>
-                </div> congue rhoncus enim, in pharetra lacus.
+                </div> 
                 
               
               </SwiperSlide>
