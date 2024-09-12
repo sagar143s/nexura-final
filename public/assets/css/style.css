@@ -12706,3 +12706,34 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .works-grid.grid-intro-2 .work-item .work-descr {
   font-size: 16px;
 }
+
+
+
+
+body {
+  --sb-track-color: #1d0070 ;
+  --sb-thumb-color:  #9e018b;
+  --sb-size: 3px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
