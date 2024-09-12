@@ -372,7 +372,7 @@ export default function Home1({ onePage = false, dark = false }) {
       
         </div>
       </section> */}
-      {/* <section
+      <section
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{
           backgroundImage:
@@ -380,7 +380,7 @@ export default function Home1({ onePage = false, dark = false }) {
         }}
       >
         <NewsLetter />
-      </section> */}
+      </section>
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
