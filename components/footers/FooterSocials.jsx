@@ -10,17 +10,17 @@ export default function FooterSocials() {
         </a>
       </li>
       <li>
-        <a href="#" rel="noopener nofollow" target="_blank">
-          <i className="fa-youtube" /> Youtube
+        <a href="https://www.instagram.com/nexura.ae/" rel="noopener nofollow" target="_blank">
+          <i className="fa-instagram" /> Instagram
         </a>
       </li>
       <li>
-        <a href="#" rel="noopener nofollow" target="_blank">
-          <i className="fa-pinterest" /> Pinterest
+        <a href="https://x.com/nexuraIt" rel="noopener nofollow" target="_blank">
+          <i className="fa-twitter" /> Twitter
         </a>
       </li>
       <li>
-        <a href="#" rel="noopener nofollow" target="_blank">
+        <a href="https://www.linkedin.com/company/nexurait/" rel="noopener nofollow" target="_blank">
           <i className="fa-linkedin" /> LinkedIn
         </a>
       </li>

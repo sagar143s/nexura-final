@@ -16,16 +16,16 @@ export default function Footer1({ dark = false }) {
           <div className="col-md-4 col-lg-3 text-gray mb-sm-50">
             <Link href={"/"} className="mb-30">
               <Image
-                src="/assets/images/logof.png"
-                width={185}
+                src="/assets/images/logowhite.png"
+                width={180}
                 height={50}
                 className="light-mode-logo"
                 alt="Your Company Logo"
               />
 
               <Image
-                src="/assets/images/logof.png"
-                width={185}
+                src="/assets/images/logowhite.png"
+                width={180}
                 height={50}
                 className="dark-mode-logo"
                 alt="Your Company Logo"
