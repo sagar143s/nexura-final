@@ -38,17 +38,11 @@ export default function About() {
       <div className="col-lg-6 col-xl-5 offset-xl-1">
         <h4 className="h5">Our Mission</h4>
         <p className="text-gray">
-          We believe that a website is the foundation of a successful online
-          presence, and our goal is to help businesses establish a&nbsp;strong
-          digital presence. Our process begins with understanding your business
-          goals.
+        We see websites as the cornerstone of a thriving online presence. Our mission is to empower businesses by establishing a compelling digital footprint. We start by deeply understanding your business goals.
         </p>
         <h4 className="h5">Our Vision</h4>
         <p className="text-gray">
-          We then use this information to create a custom website that not only
-          reflects your brand but also helps you achieve your business
-          objectives. From responsive design to intuitive navigation, we focus
-          on every detail.
+        Using these insights, we craft a bespoke website that embodies your brand and drives your business goals. With an emphasis on responsive design and seamless navigation, we ensure every detail contributes to your success.
         </p>
       </div>
     </div>
