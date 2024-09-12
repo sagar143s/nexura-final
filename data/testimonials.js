@@ -1,24 +1,23 @@
 export const testimonials = [
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
+    quote: `هذه القالب جميل للغاية ويحتوي على خيارات جديدة رائعة. يتم تحديثه بشكل متكرر مما يمنحني جودة أعلى. الدعم هو من الأفضل الذي تعاملت معه على الإطلاق. سريع، مهذب، ومفيد للغاية!`,
+    author: "Mohamed Ali",
     role: "Business Owner",
     image: "/assets/images/ts1-user.jpg",
   },
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
+    quote: `High professionalism and fast execution. I’m completely satisfied`,
+    author: "Sara Ahmed",
     role: "Business Owner",
     image: "/assets/images/ts1-user.jpg",
   },
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
+    quote: `Amazing work and exceptional support. Highly recommended!`,
+    author: "Hassan",
     role: "Business Owner",
     image: "/assets/images/ts1-user.jpg",
   },
 ];
-
 export const testimonials2 = [
   {
     id: 1,
