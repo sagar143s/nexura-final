@@ -342,7 +342,7 @@ export default function Home1({ onePage = false, dark = false }) {
         <Promo />{" "}
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         }`}
@@ -369,12 +369,10 @@ export default function Home1({ onePage = false, dark = false }) {
             </div>
           </div>
           <Blog />
-          {/* Blog Posts Grid */}
-
-          {/* End Blog Posts Grid */}
+      
         </div>
-      </section>
-      <section
+      </section> */}
+      {/* <section
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{
           backgroundImage:
@@ -382,7 +380,7 @@ export default function Home1({ onePage = false, dark = false }) {
         }}
       >
         <NewsLetter />
-      </section>
+      </section> */}
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
