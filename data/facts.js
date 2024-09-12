@@ -3,25 +3,25 @@ export const numberItems = [
     id: 1,
     delay: "0.4s",
     title: "28%",
-    description: "Resent tincidunt lacus sedenim posuere posuere nulla acusan.",
+    description: "Recent increase in client engagement through our innovative strategies.",
   },
   {
     id: 2,
     delay: "0.6s",
-    title: "1.5k",
-    description: "Curabitur eu quam auctor nuca convallis metus nec feugia.",
+    title: "19+",
+    description: "Successful projects completed, showcasing our expertise and dedication.",
   },
   {
     id: 3,
     delay: "0.8s",
-    title: "30+",
-    description: "Pellentesque pharetra libero eget vestibulum ullamcorper.",
+    title: "5+",
+    description: "Years of combined experience in providing top-tier IT solutions.",
   },
   {
     id: 4,
     delay: "1s",
     title: "2x",
-    description: "Suspendisse a scelerisque vitae rutrum posuere sec lacus.",
+    description: "Doubling of client satisfaction through our tailored and effective services.",
   },
 ];
 export const numberItems2 = [
