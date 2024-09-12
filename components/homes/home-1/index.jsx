@@ -173,14 +173,7 @@ export default function Home1({ onePage = false, dark = false }) {
           </div>
         </div>
       </ParallaxContainer>
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
-        id="portfolio"
-      >
-        <Portfolio />
-      </section>
+   
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
         className={`page-section  ${
