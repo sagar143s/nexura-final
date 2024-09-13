@@ -130,7 +130,7 @@ export default function MainAboutPage1Dark() {
                         <Image
                           width="103"
                           height="223"
-                          src="/assets/images/decoration-2.svg"
+                          src="/assets/images/vision.jpg"
                           alt=""
                         />
                       </div>
