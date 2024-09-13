@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/common/AnimatedText";
-import Footer3 from "@/components/footers/Footer3";
+import Footer1 from "@/components/footers/Footer1";
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import { menuItemsDark } from "@/data/menu";
 import Features from "@/components/homes/home-10/Features";
@@ -123,7 +123,7 @@ export default function BrutalistAboutPageDark() {
               </section>
             </main>
             <footer className="page-section footer-1 bg-dark-2 light-content">
-              <Footer3 />
+              <Footer1 dark />
             </footer>
           </div>
         </div>
