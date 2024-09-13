@@ -306,7 +306,7 @@ export default function MainAboutPage2() {
                       data-wow-offset={255}
                     >
                       <h2 className="section-title mb-50 mb-sm-20">
-                        How we work?
+                        How we work?4
                       </h2>
                       <Faq />
                       <div className="local-scroll">

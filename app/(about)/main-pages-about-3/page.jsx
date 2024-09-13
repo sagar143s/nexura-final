@@ -279,7 +279,7 @@ export default function MainAboutPage3() {
                     {/* Text */}
                     <div className="col-md-12 col-lg-3 mb-md-50">
                       <h2 className="section-title-small mb-20">
-                        How we work?
+                        How we work?66
                       </h2>
                       <p className="text-gray mb-0">
                         Lorem ipsum dolor sit amet casume adipisin elit. Maximus
