@@ -24,7 +24,7 @@ export default function Form2() {
         <i className="icon-info size-16" aria-hidden="true" />
         By sending the form you agree to the{" "}
         <a href="#">Terms &amp; Conditions</a> and{" "}
-        <a href="#">Privacy Policy</a>.
+        <a href="#">Privacy Policydsd</a>.
       </div>
       <div
         id="subscribe-result"

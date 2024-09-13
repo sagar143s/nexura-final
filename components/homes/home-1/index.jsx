@@ -376,7 +376,7 @@ export default function Home1({ onePage = false, dark = false }) {
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-2.jpg)",
+            "url(/assets/images/full-width-images/5.jpg)",
         }}
       >
         <NewsLetter />

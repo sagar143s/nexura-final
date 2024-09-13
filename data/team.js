@@ -1,8 +1,8 @@
 export const teamMembers = [
   {
-    name: "Thomas Johnson",
-    role: "Developer, co-founder",
-    image: "/assets/images/team/team-1.jpg",
+    name: "Rohith Sagar",
+    role: "Product Manager",
+    image: "/assets/images/team/team1.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },

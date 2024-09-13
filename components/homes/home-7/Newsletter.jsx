@@ -10,7 +10,7 @@ export default function Newslette() {
             <div className="col-md-10 col-lg-8 d-flex mb-50 mb-sm-30">
               <div className="flex-sm-shrink-0 me-3 me-sm-4">
                 <Image
-                  src="/assets/images/demo-gradient/section-image-5.png"
+                  src="/assets/images/demo-gradient/section-image-5.pn"
                   width={100}
                   height={100}
                   alt="Image Description"
@@ -55,7 +55,7 @@ export default function Newslette() {
             </div>
             <div className="form-tip">
               <i className="icon-info size-16" /> By sending the form you agree
-              to the <a href="#">Terms &amp; Conditions</a> and{" "}
+              to the <a href="#">Terms &amp; Conditionsbhbhb</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </div>
             <div

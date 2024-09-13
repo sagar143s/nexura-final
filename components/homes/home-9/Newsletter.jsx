@@ -10,7 +10,7 @@ export default function Newsletter() {
       {/* Decoration Dots */}
       <div className="decoration-16 opacity-035 d-none d-md-block">
         <Image
-          src="/assets/images/demo-slick/decoration-2.svg"
+          src="/assets/images/demo-slick/decoration-2.sv"
           alt="Image Description"
           width={128}
           height={228}
@@ -18,7 +18,7 @@ export default function Newsletter() {
       </div>
       <div className="decoration-17 opacity-035 d-none d-md-block">
         <Image
-          src="/assets/images/demo-slick/decoration-2.svg"
+          src="/assets/images/demo-slick/decoration-2.sv"
           alt="Image Description"
           width={128}
           height={228}
@@ -61,7 +61,7 @@ export default function Newsletter() {
               <div className="form-tip">
                 <i className="icon-info size-16" /> By sending the form you
                 agree to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                <a href="#">Privacy Policy</a>.
+                <a href="#">Privacy Policyjhjhjh</a>.
               </div>
               <div
                 id="subscribe-result"
