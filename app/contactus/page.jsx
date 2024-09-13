@@ -1,10 +1,10 @@
 import Map from "@/components/common/Map";
 
 import Footer9 from "@/components/footers/Footer9";
-import Header10 from "@/components/headers/Header10";
+import Header1Multipage from "@/components/headers/Header1Multipage";
 import Contact from "@/components/homes/home-10/Contact";
 
-import { strongMultiPages, strongMultiPagesDark } from "@/data/menu";
+import { menuItemsDark } from "@/data/menu";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -30,7 +30,7 @@ export default function StrongContactPageDark() {
         <div className="dark-mode">
           <div className="page bg-dark-1" id="top">
             <nav className="main-nav dark transparent stick-fixed wow-menubar wch-unset">
-              <Header10 links={strongMultiPagesDark} />
+            <Header1Multipage links={menuItemsDark} />
             </nav>
             <main className="main">
               <ParallaxContainer
