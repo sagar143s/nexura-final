@@ -14,6 +14,7 @@ export default function Services() {
           className="service-2-item pt-30 pt-md-20 wow fadeInUp"
           data-wow-delay="0.2s"
         >
+          
           <div
             className={`services-2-button  ${
               activeService == i ? "active" : ""

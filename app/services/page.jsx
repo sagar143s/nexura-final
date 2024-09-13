@@ -1,7 +1,9 @@
 import AnimatedText from "@/components/common/AnimatedText";
-import Footer3 from "@/components/footers/Footer3";
-import Header3 from "@/components/headers/Header3";
 import Services from "@/components/homes/home-3/Services";
+import Header1Multipage from "@/components/headers/Header1Multipage";
+import { menuItemsDark } from "@/data/menu";
+import Footer1 from "@/components/footers/Footer1";
+
 
 const onePage = false;
 const dark = true;
@@ -27,7 +29,7 @@ export default function BrutalistServicesPageDark() {
         <div className="dark-mode">
           <div className="page bg-dark-1" id="top">
             <nav className="main-nav dark transparent stick-fixed wow-menubar">
-              <Header3 links={brutalistMultipageDark} />
+            <Header1Multipage links={menuItemsDark} />
             </nav>
             <main id="main">
               <ParallaxContainer
@@ -70,23 +72,20 @@ export default function BrutalistServicesPageDark() {
                   >
                     <div className="col-lg-5 mb-md-40">
                       <p className="section-descr-large mb-0">
-                        We use the{" "}
+                      Innovative IT Services for{" "}
                         <span className="mark-decoration-2">
-                          power of design
+                        Web, App Development, SEO, and Digital Marketing
                         </span>{" "}
-                        to solve complex problems and cultivate business
-                        solutions.
+                        to Accelerate Your Business Growth and Success
                       </p>
+
+
+                    
                     </div>
 
                     <div className="col-lg-7">
                       <p className="mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc semper aliquam est, a egestas ex vestibulum ac.
-                        Curabitur cursus sem vitae arcu placerat cursus. Aenean
-                        condimentum, justo eu cursus commodo, dolor mauris porta
-                        nisi, vitae placerat diam dolor vel urna. In iaculis
-                        placerat est pharetra dignissim.
+                      At Nexura IT Solutions, we specialize in delivering a full spectrum of IT services designed to elevate your business in today's competitive digital environment. From dynamic web development to custom Android and iOS apps, digital marketing strategies, SEO optimization, and more, our team is equipped to handle every aspect of your technology needs. Whether you're building from the ground up or scaling your digital presence, we are committed to helping you achieve sustainable growth and innovation. Trust Nexura IT Solutions to guide your business through the future of technology.
                       </p>
                     </div>
                   </div>
@@ -94,9 +93,8 @@ export default function BrutalistServicesPageDark() {
                 </div>
               </section>
             </main>
-            <footer className="page-section footer-1 bg-dark-2 light-content">
-              <Footer3 />
-            </footer>
+            
+              <Footer1 dark />
           </div>{" "}
         </div>
       </div>

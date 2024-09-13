@@ -1,31 +1,101 @@
 export const services = [
   {
     number: "01",
-    title: "Branding",
+    title: "Web Development",
     image: "/assets/images/demo-brutalist/services/1.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "We create high-performing, secure, and scalable websites tailored to your business needs. Our expertise ensures a seamless user experience with modern design and cutting-edge technology.",
   },
   {
     number: "02",
-    title: "Web Design",
+    title: "Mobile App Development",
     image: "/assets/images/demo-brutalist/services/2.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "Develop intuitive and feature-rich Android and iOS applications that enhance user engagement and drive growth. Our team delivers apps that work smoothly across devices and platforms.",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Digital Marketing",
     image: "/assets/images/demo-brutalist/services/3.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "Boost your brand visibility and reach your target audience with our result-driven digital marketing strategies, including SEO, PPC, social media management, and content marketing.",
   },
   {
     number: "04",
-    title: "Photography",
+    title: "SEO Optimization",
     image: "/assets/images/demo-brutalist/services/4.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis urna ligula. Nam convallis nunc in felis mattis, a sollicitudin ligula molestie. Donec tincidunt eu lorem eget varius. Vestibulum ac efficitur ante. Aenean accumsan, justo vel placerat fermentum, elit neque lobortis velit, a varius nibh lorem in tellus.",
+      "Improve your search engine rankings and drive organic traffic with our expert SEO services. We optimize your website for relevant keywords, ensuring long-term visibility and success.",
+  },
+  {
+    number: "05",
+    title: "UI/UX Design",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Our creative UI/UX design team crafts intuitive and engaging interfaces that provide an exceptional user experience, ensuring your digital platforms are both visually appealing and functional.",
+  },
+  {
+    number: "06",
+    title: "Logo Design",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Create a memorable and unique brand identity with our professional logo design services. We craft logos that reflect your brand's values, helping you stand out in the competitive marketplace.",
+  },
+  {
+    number: "07",
+    title: "Branding",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Establish a strong, cohesive brand presence with our complete branding solutions. From logo creation to brand strategy, we help businesses connect with their audience and build lasting impressions.",
+  },
+  {
+    number: "08",
+    title: "Product Photoshoot",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Showcase your products in the best light with our professional product photoshoot services. We capture high-quality images that highlight your product's features and appeal to your target market.",
+  },
+  {
+    number: "09",
+    title: "Photoshoot",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Whether it's for marketing campaigns, social media, or business events, our photography team delivers stunning visuals that align with your brand's story and vision.",
+  },
+  {
+    number: "10",
+    title: "Cloud Services",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Leverage the power of the cloud with our reliable and scalable cloud solutions, including hosting, infrastructure management, and cloud-based application development for optimized business operations.",
+  },
+  {
+    number: "11",
+    title: "IT Consulting",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Get expert guidance on IT infrastructure, security, and strategy. Our IT consulting services help businesses align their technology solutions with their goals for maximum efficiency and growth.",
+  },
+  {
+    number: "12",
+    title: "Network Setup & Support",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Ensure seamless and secure communication within your organization with our expert network setup, maintenance, and support services, tailored to meet your business needs.",
+  },
+  {
+    number: "13",
+    title: "Cybersecurity",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Protect your business from cyber threats with our advanced cybersecurity solutions. We provide risk assessments, firewall setups, data encryption, and ongoing monitoring to keep your systems secure.",
+  },
+  {
+    number: "14",
+    title: "Custom Software Development",
+    image: "/assets/images/demo-brutalist/services/4.jpg",
+    description:
+      "Build powerful, custom software solutions tailored to your business. From enterprise-level software to niche applications, we provide scalable solutions that enhance productivity and efficiency.",
   },
 ];
 
