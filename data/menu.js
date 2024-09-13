@@ -528,37 +528,9 @@ export const menuItems = [
 export const menuItemsDark = [
   {
     title: "Home",
-    subMenu: [
-      {
-        title: "Multi Page",
-        links: [
-          { href: "/main-multi-page-dark", text: "Main Demo" },
-          { href: "/main-multi-page-typed-text-dark", text: "Typed Text" },
-          {
-            href: "/main-multi-page-image-parallax-dark",
-            text: "Image Parallax",
-          },
-          {
-            href: "/main-multi-page-slider-fullscreen-dark",
-            text: "Slider Fullscreen",
-          },
-          {
-            href: "/main-multi-page-slider-background-dark",
-            text: "Slider Background",
-          },
-          { href: "/main-multi-page-bg-video-dark", text: "BG Video HTML5" },
-          {
-            href: "/main-multi-page-bg-video-youtube-dark",
-            text: "BG Video Youtube",
-          },
-          { href: "/main-multi-page-dark-dark", text: "Dark Version" },
-        ],
-      },
-      {
-        title: "Services",
-        href:"/aboutus"
-      },
-    ],
+    href:"/aboutus",
+     
+  
   },
   {
     title: "Pages",

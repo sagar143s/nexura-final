@@ -99,7 +99,7 @@ export default function Nav2({ links }) {
         <li className={menuOpen[0] == index + 3 ? "js-opened" : ""} key={index}>
           <a
             onClick={() => toggleParent1(index + 3)}
-            href="#"
+            href="/aboutus"
             className={`mn-has-sub ${
               item.subItems?.some((e1) =>
                 e1.links?.some(
