@@ -45,7 +45,7 @@ export default function Nav2({ links }) {
 
   return (
     <>
-      {links.slice(0, 3).map((item, index) => (
+      {/* {links.slice(0, 3).map((item, index) => (
         <li className={menuOpen[0] == index ? "js-opened" : ""} key={index}>
           <a
             href="#"
@@ -92,16 +92,16 @@ export default function Nav2({ links }) {
             ))}
           </ul>
         </li>
-      ))}
+      ))} */}
       {/* End Item With Sub */}
       {/* Item With Sub */}
-      {links.slice(3, 5).map((item, index) => (
+      {links.map((item, index) => (
         <li className={menuOpen[0] == index + 3 ? "js-opened" : ""} key={index}>
           <a
             onClick={() => toggleParent1(index + 3)}
             href="#"
             className={`mn-has-sub ${
-              item.subItems.some((e1) =>
+              item.subItems?.some((e1) =>
                 e1.links?.some(
                   (e2) => e2.href.split("/")[1] == pathname.split("/")[1]
                 )

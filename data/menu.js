@@ -555,29 +555,8 @@ export const menuItemsDark = [
         ],
       },
       {
-        title: "One Page",
-        links: [
-          { href: "/main-one-page-dark", text: "Main Demo" },
-          { href: "/main-one-page-typed-text-dark", text: "Typed Text" },
-          {
-            href: "/main-one-page-image-parallax-dark",
-            text: "Image Parallax",
-          },
-          {
-            href: "/main-one-page-slider-fullscreen-dark",
-            text: "Slider Fullscreen",
-          },
-          {
-            href: "/main-one-page-slider-background-dark",
-            text: "Slider Background",
-          },
-          { href: "/main-one-page-bg-video-dark", text: "BG Video HTML5" },
-          {
-            href: "/main-one-page-bg-video-youtube-dark",
-            text: "BG Video Youtube",
-          },
-          { href: "/main-one-page-dark", text: "Dark Version" },
-        ],
+        title: "Services",
+        href:"/aboutus"
       },
     ],
   },
