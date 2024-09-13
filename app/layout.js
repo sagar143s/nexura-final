@@ -12,6 +12,7 @@ import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
 import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import Head from 'next/head';
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -43,9 +44,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="no-mobile no-touch ">
-      <head>
+      <Head>
 
-{/* <!-- Google Tag Manager --> */}
 <script
   dangerouslySetInnerHTML={{
     __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -55,7 +55,12 @@ export default function RootLayout({ children }) {
     })(window,document,'script','dataLayer','GTM-KQJXF9PJ');`
   }}
 />
-{/* <!-- End Google Tag Manager --> */}
+
+
+<script
+          async
+          src="https://www.googletagmanager.com/ns.html?id=GTM-KQJXF9PJ" height="0" width="0" style="display:none;visibility:hidden"></script>
+
 
 
 
@@ -83,13 +88,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-      </head>
+      </Head>
       <body className="appear-animate body">
-        
-      {/* <!-- Google Tag Manager (noscript) --> */}
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQJXF9PJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-{/* <!-- End Google Tag Manager (noscript) --> */}
+  
+
         
         {children}</body>
     </html>
