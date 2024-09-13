@@ -18,6 +18,7 @@ export default function Nav2({ links }) {
     }
     setMenuOpen(tempMenuOpen);
   };
+
   const toggleParent2 = (i) => {
     const tempMenuOpen = [...menuOpen];
     if (menuOpen[1] == i) {
@@ -27,6 +28,7 @@ export default function Nav2({ links }) {
     }
     setMenuOpen(tempMenuOpen);
   };
+
   const pathname = usePathname();
   useEffect(() => {
     setTimeout(() => {
@@ -45,13 +47,13 @@ export default function Nav2({ links }) {
 
   return (
     <>
-      {links.slice(0, 3).map((item, index) => (
+      {/* {links.slice(0, 3).map((item, index) => (
         <li className={menuOpen[0] == index ? "js-opened" : ""} key={index}>
           <a
             href="#"
             onClick={() => toggleParent1(index)}
             className={`mn-has-sub ${
-              item.subMenu.some((e1) =>
+              item?.subMenu?.some((e1) =>
                 e1.links.some(
                   (e2) => e2.href.split("/")[1] == pathname.split("/")[1]
                 )
@@ -70,10 +72,10 @@ export default function Nav2({ links }) {
             {item.subMenu.map((subItem, subIndex) => (
               <li className="mn-sub-multi" key={subIndex}>
                 {subItem.title && (
-                  <span className="mn-group-title">{subItem.title}</span>
+                  <span className="mn-group-title">{subItem.title}...</span>
                 )}
                 <ul>
-                  {subItem.links.map((link, linkIndex) => (
+                  {subItem?.links?.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <Link
                         className={
@@ -92,17 +94,18 @@ export default function Nav2({ links }) {
             ))}
           </ul>
         </li>
-      ))}
+      ))} */}
       {/* End Item With Sub */}
       {/* Item With Sub */}
-      {links.slice(3, 5).map((item, index) => (
+      {/* {links.slice(3, 6).map((item, index) => ( */}
+      {links?.map((item, index) => (
         <li className={menuOpen[0] == index + 3 ? "js-opened" : ""} key={index}>
           <a
             onClick={() => toggleParent1(index + 3)}
             href="#"
             className={`mn-has-sub ${
               item.subItems.some((e1) =>
-                e1.links.some(
+                e1?.links?.some(
                   (e2) => e2.href.split("/")[1] == pathname.split("/")[1]
                 )
               )
@@ -126,17 +129,22 @@ export default function Nav2({ links }) {
                   key={subIndex}
                 >
                   <a
-                    href="#"
+                    href={subItem?.href || "#"}
                     onClick={() => toggleParent2(subIndex)}
                     className={`mn-has-sub ${
-                      subItem.links.some(
+                      subItem?.links?.some(
                         (e2) => e2.href.split("/")[1] == pathname.split("/")[1]
                       )
                         ? "active"
                         : ""
                     }`}
                   >
-                    {subItem.title} <i className="mi-chevron-right right" />
+                    {subItem.title}{" "}
+                    <i
+                      className={`${
+                        subItem?.href ? "" : "mi-chevron-right"
+                      } right`}
+                    />
                   </a>
                   {subItem.links && (
                     <ul
@@ -164,9 +172,9 @@ export default function Nav2({ links }) {
               ))}
               {!index && (
                 <>
-                  {item.subItems[0].links[0].href.includes("-dark") ? (
+{item.subItems[2]?.links?.[2]?.href?.includes("-dark") ? (
                     <li>
-                      <Link
+                      {/* <Link
                         className={
                           pathname
                             .split("/")[1]
@@ -177,11 +185,11 @@ export default function Nav2({ links }) {
                         href="/main-portfolio-lazyload-dark"
                       >
                         Lazyload
-                      </Link>
+                      </Link> */}
                     </li>
                   ) : (
                     <li>
-                      <Link
+                      {/* <Link
                         className={
                           pathname
                             .split("/")[1]
@@ -192,7 +200,7 @@ export default function Nav2({ links }) {
                         href="/main-portfolio-lazyload"
                       >
                         Lazyload
-                      </Link>
+                      </Link> */}
                     </li>
                   )}
                 </>
