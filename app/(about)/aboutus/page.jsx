@@ -122,9 +122,7 @@ export default function BrutalistAboutPageDark() {
                 <Features />
               </section>
             </main>
-            <footer className="page-section footer-1 bg-dark-2 light-content">
               <Footer1 dark />
-            </footer>
           </div>
         </div>
       </div>
