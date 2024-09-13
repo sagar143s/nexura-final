@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer3 from "@/components/footers/Footer3";
-import Header3 from "@/components/headers/Header3";
+import Header1Multipage from "@/components/headers/Header1Multipage";
+import { menuItemsDark } from "@/data/menu";
 import Features from "@/components/homes/home-10/Features";
 import Banner from "@/components/homes/home-3/Banner";
 import { qualities } from "@/data/features";
@@ -28,7 +29,7 @@ export default function BrutalistAboutPageDark() {
         <div className="dark-mode">
           <div className="page bg-dark-1" id="top">
             <nav className="main-nav dark transparent stick-fixed wow-menubar">
-              <Header3 links={brutalistMultipageDark} />
+            <Header1Multipage links={menuItemsDark} />
             </nav>
             <main id="main">
               <ParallaxContainer
@@ -42,7 +43,7 @@ export default function BrutalistAboutPageDark() {
                 <div className="container position-relative pt-20 pt-sm-40">
                   <h1 className="hs-title-2 font-alt uppercase mb-0">
                     <span className="wow charsAnimIn" data-splitting="chars">
-                      <AnimatedText text="About Studio" />
+                      <AnimatedText text="About Us" />
                     </span>
                     <span
                       className="section-title-image wow fadeScaleIn"
@@ -71,10 +72,7 @@ export default function BrutalistAboutPageDark() {
                         className="section-descr-large mb-60 mb-sm-40 wow fadeInUp"
                         data-wow-delay="0.1s"
                       >
-                        Resonance is a full-service creative studio creating
-                        beautiful digital experiences and products. We are an
-                        award winning studio specializing in branding, design
-                        and engineering. Our mission is to make work meaningful.
+                      Nexura IT Solutions, based in Dubai and led by CEO Sultan Mohammad Hassan Alshehhi, is a full-service tech company specializing in development, networking, and support. We deliver innovative digital solutions that empower businesses with impactful technology and experiences.
                       </p>
                       <ul
                         className="section-features font-alt clearlist uppercase wow fadeInUp"

@@ -802,7 +802,7 @@ export const menuItemsDark = [
       {
         
         title: "About Our Company",
-        href: "/haklow",
+        href: "/aboutus",
    
       },
 
