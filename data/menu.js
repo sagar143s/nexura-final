@@ -797,22 +797,20 @@ export const menuItemsDark = [
     ],
   },
   {
-    title: "Blog",
+    title: "About",
     subItems: [
       {
-        title: "Classic",
+        
+        title: "About Our Company",
         href: "/haklow",
-        // links: [
-        //   {
-        //     href: "/main-blog-classic-sidebar-left-dark",
-        //     label: "Sidebar Left",
-        //   },
-        //   {
-        //     href: "/main-blog-classic-sidebar-right-dark",
-        //     label: "Sidebar Right",
-        //   },
-        //   { href: "/main-blog-classic-fullwidth-dark", label: "Fullwidth" },
-        // ],
+   
+      },
+
+      {
+        
+        title: "Contact Us",
+        href: "/haklow",
+   
       },
       
     ],
