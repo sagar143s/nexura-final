@@ -193,7 +193,7 @@ export default function MainAboutPage2() {
               className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
               style={{
                 backgroundImage:
-                  "url(/assets/images/full-width-images/section-bg-2.jpg)",
+                  "url(/assets/images/full-width-images/section-bg-2.jp)",
               }}
             >
               <div className="container position-relative">

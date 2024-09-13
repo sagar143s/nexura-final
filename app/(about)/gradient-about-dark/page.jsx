@@ -168,7 +168,7 @@ export default function GradientAboutPageDark() {
                     className={`page-section bg-dark-1 bg-dark-alpha-80 bg-scroll light-content round-large overflow-hidden`}
                     style={{
                       backgroundImage:
-                        "url(/assets/images/demo-gradient/section-bg-1.jpg)",
+                        "url(/assets/images/demo-gradient/section-bg-1.jp)",
                     }}
                   >
                     <div className="container position-relative">

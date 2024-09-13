@@ -135,7 +135,7 @@ export default function Home1({ onePage = false, dark = false }) {
         className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-2.jpg)",
+            "url(/assets/images/full-width-images/03.jpg)",
         }}
       >
         <div className="container position-relative">
