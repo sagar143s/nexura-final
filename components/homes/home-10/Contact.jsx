@@ -8,13 +8,12 @@ export default function Contact() {
     <div className="container">
       <div className="row mb-90 mb-sm-50">
         <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
-          <h2 className="section-title-strong mb-40">
-            Let’s work <span className="font-alt">together</span>
-          </h2>
+        <h4 className="section-title-strong mb-40">
+  Get in Touch with <span className="font-alt">Nexura IT Solutions</span>
+</h4>
+
           <p className="mb-0">
-            Integer non efficitur ex lorem ipsum. Praesent mauris, dignissim
-            ultricies sapien non, pulvinar volutpat elit donec lorem impsum
-            blandit mollis ipsum, eu fringilla.
+          Need reliable IT support? Whether it’s development, networking, or troubleshooting, Nexura IT Solutions has the expertise you need.
           </p>
         </div>
         <div className="col-lg-7 offset-xl-1">

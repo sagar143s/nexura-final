@@ -1,6 +1,6 @@
 import Map from "@/components/common/Map";
 
-import Footer9 from "@/components/footers/Footer9";
+import Footer1 from "@/components/footers/Footer1";
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import Contact from "@/components/homes/home-10/Contact";
 
@@ -70,7 +70,7 @@ export default function StrongContactPageDark() {
             </main>
 
             <footer className="footer-1 bg-dark-2 light-content">
-              <Footer9 />
+            <Footer1 dark />
             </footer>
           </div>{" "}
         </div>
