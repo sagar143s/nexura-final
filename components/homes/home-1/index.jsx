@@ -150,14 +150,14 @@ export default function Home1({ onePage = false, dark = false }) {
               <div className="local-scroll">
                 {onePage ? (
                   <a
-                    href="#contact"
+                    href="/contactus"
                     className="btn btn-mod btn-large btn-round btn-hover-anim"
                   >
                     <span>Contact us</span>
                   </a>
                 ) : (
                   <Link
-                    href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                    href={`/contactus${dark ? "" : ""}`}
                     className="btn btn-mod btn-large btn-round btn-hover-anim"
                   >
                     <span>Contact us</span>
