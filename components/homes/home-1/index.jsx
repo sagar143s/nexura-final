@@ -12,7 +12,6 @@ import NewsLetter from "@/components/homes/home-1/NewsLetter";
 import Portfolio from "@/components/homes/home-1/Portfolio";
 import Promo from "@/components/homes/home-1/Promo";
 import Service from "@/components/homes/home-1/Service";
-import Team from "@/components/homes/home-1/Team";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 import Link from "next/link";
 import Testimonials2 from "./Teatimonials2";
@@ -59,68 +58,13 @@ export default function Home1({ onePage = false, dark = false }) {
               </div>
               {/* End Decorative Dots */}
 
-              {onePage ? (
-                <a
-                  href="#team"
-                  className="link-hover-anim underline align-middle"
-                  data-link-animate="y"
-                >
-                  <span className="link-strong link-strong-unhovered">
-                    Learn more about us{" "}
-                    <i
-                      className="mi-arrow-right size-18"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                  <span
-                    className="link-strong link-strong-hovered"
-                    aria-hidden="true"
-                  >
-                    Learn more about us{" "}
-                    <i
-                      className="mi-arrow-right size-18"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </a>
-              ) : (
-                <Link
-                  href={`/main-pages-about-1${dark ? "-dark" : ""}`}
-                  className="link-hover-anim underline align-middle"
-                  data-link-animate="y"
-                >
-                  <span className="link-strong link-strong-unhovered">
-                    Learn more about us{" "}
-                    <i
-                      className="mi-arrow-right size-18"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                  <span
-                    className="link-strong link-strong-hovered"
-                    aria-hidden="true"
-                  >
-                    Learn more about us{" "}
-                    <i
-                      className="mi-arrow-right size-18"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </Link>
-              )}
+             
             </div>
           </div>
           <About />
         </div>
       </section>
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
-        }`}
-        id="team"
-      >
-        <Team />
-      </section>
+     
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

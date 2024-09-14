@@ -4,6 +4,8 @@ import Header1Multipage from "@/components/headers/Header1Multipage";
 import { menuItemsDark } from "@/data/menu";
 import Features from "@/components/homes/home-10/Features";
 import Banner from "@/components/homes/home-3/Banner";
+import Team from "@/components/homes/home-1/Team";
+import Link from "next/link";
 import { qualities } from "@/data/features";
 const onePage = false;
 const dark = true;
@@ -121,6 +123,72 @@ export default function BrutalistAboutPageDark() {
               >
                 <Features />
               </section>
+
+              {onePage ? (
+                <a
+                  href="#team"
+                  className="link-hover-anim underline align-middle"
+                  data-link-animate="y"
+                >
+                  <span className="link-strong link-strong-unhovered">
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <span
+                    className="link-strong link-strong-hovered"
+                    aria-hidden="true"
+                  >
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </a>
+              ) : (
+                <Link
+                  href={`/main-pages-about-1${dark ? "-dark" : ""}`}
+                  className="link-hover-anim underline align-middle"
+                  data-link-animate="y"
+                >
+                  <span className="link-strong link-strong-unhovered">
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <span
+                    className="link-strong link-strong-hovered"
+                    aria-hidden="true"
+                  >
+                    Learn more about us{" "}
+                    <i
+                      className="mi-arrow-right size-18"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </Link>
+              )}
+
+              <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark light-content" : "bg-gray-light-1 "
+        }`}
+        id="team"
+      >
+        <Team />
+      </section>
+
+
+
+
+
+
+
             </main>
               <Footer1 dark />
           </div>
