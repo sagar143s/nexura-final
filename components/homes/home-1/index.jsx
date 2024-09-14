@@ -98,14 +98,14 @@ export default function Home1({ onePage = false, dark = false }) {
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
                 {onePage ? (
                   <a
-                    href="#contact"
+                    href="/contactus"
                     className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
                   >
                     <span>Request Price</span>
                   </a>
                 ) : (
                   <Link
-                    href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                    href={`/contactus${dark ? "" : ""}`}
                     className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
                   >
                     <span>Request Price</span>

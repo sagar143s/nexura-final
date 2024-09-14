@@ -219,7 +219,7 @@ export default function MainAboutPage2Dark() {
                         data-wow-delay="0.2s"
                       >
                         <Link
-                          href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                          href={`/contactus${dark ? "-dark" : ""}`}
                           className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
                         >
                           <span>Request Price</span>

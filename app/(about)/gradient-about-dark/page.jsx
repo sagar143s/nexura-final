@@ -189,7 +189,7 @@ export default function GradientAboutPageDark() {
                             data-wow-delay="0.2s"
                           >
                             <Link
-                              href={`/gradient-services${dark ? "-dark" : ""}`}
+                              href={`/contactus${dark ? "-dark" : ""}`}
                               className="btn btn-mod btn-border-w-light btn-medium btn-round"
                               data-btn-animate="y"
                             >
