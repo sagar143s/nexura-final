@@ -532,6 +532,12 @@ export const menuItemsDark = [
      
   
   },
+  {
+    title: "Services",
+    href:"/services",
+     
+  
+  },
   // {
   //   title: "Pages",
   //   subMenu: [
