@@ -99,7 +99,7 @@ export default function Nav2({ links }) {
         <li className={menuOpen[0] == index + 3 ? "js-opened" : ""} key={index}>
           <a
             onClick={() => toggleParent1(index + 3)}
-            href="/aboutus"
+            href={item.hasOwnProperty("href") ? item.href : "#"}
             className={`mn-has-sub ${
               item.subItems?.some((e1) =>
                 e1.links?.some(
@@ -112,7 +112,8 @@ export default function Nav2({ links }) {
                 : ""
             }`}
           >
-            {item.title} <i className="mi-chevron-down" />
+            {item.title}{" "}
+            {!item.hasOwnProperty("href") && <i className="mi-chevron-down" />}
           </a>
           {item.subItems && (
             <ul
@@ -126,7 +127,8 @@ export default function Nav2({ links }) {
                   key={subIndex}
                 >
                   <a
-                    href="#"
+                    // href="#"
+                    href={subItem.hasOwnProperty("href") ? subItem.href : "#"}
                     onClick={() => toggleParent2(subIndex)}
                     className={`mn-has-sub ${
                       subItem.links?.some(
@@ -136,7 +138,10 @@ export default function Nav2({ links }) {
                         : ""
                     }`}
                   >
-                    {subItem.title} <i className="mi-chevron-right right" />
+                    {subItem.title}{" "}
+                    {!subItem.hasOwnProperty("href") && (
+                      <i className="mi-chevron-right right" />
+                    )}
                   </a>
                   {subItem.links && (
                     <ul
