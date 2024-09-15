@@ -8,7 +8,6 @@ import "react-modal-video/css/modal-video.css";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-
 import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
@@ -33,6 +32,7 @@ export default function RootLayout({ children }) {
       window.removeEventListener("scroll", headerChangeOnScroll);
     };
   }, [path]);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Import the script only on the client side
@@ -43,26 +43,26 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className="no-mobile no-touch ">
+    <html lang="en" className="no-mobile no-touch">
       <Head>
-
-<script
-  dangerouslySetInnerHTML={{
-    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KQJXF9PJ');`
-  }}
-/>
-
-
-<script
-          async
-          src="https://www.googletagmanager.com/ns.html?id=GTM-KQJXF9PJ" height="0" width="0" style="display:none;visibility:hidden"></script>
-
-
-
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-KQJXF9PJ');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
 
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
@@ -90,10 +90,16 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className="appear-animate body">
-  
-
-        
-        {children}</body>
+        {children}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KQJXF9PJ"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+      </body>
     </html>
   );
 }
