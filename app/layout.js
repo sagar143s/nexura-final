@@ -12,6 +12,7 @@ import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import Head from 'next/head';
+import { metadata } from './metadata'; 
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       });
     }
   }, []);
+
 
   return (
     <html lang="en" className="no-mobile no-touch">
