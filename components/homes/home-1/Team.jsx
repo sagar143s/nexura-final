@@ -19,8 +19,8 @@ export default function Team() {
             </p>
             <footer>
               <div className="section-line mb-10" />
-              Thomas Johnson
-              <div className="small">Developer, Co-founder</div>
+              Sulthan Alshehhi
+              <div className="small">Chief Executive Officer (CEO)</div>
             </footer>
           </blockquote>
         </div>

@@ -1,8 +1,19 @@
 export const teamMembers = [
+  
+  {
+    name: "Sulthan Alshehhi",
+    role: "Chief Executive Officer (CEO)",
+    image: "/assets/images/team/sulthan.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
   {
     name: "Rohith Sagar",
-    role: "Product Manager",
-    image: "/assets/images/team/team1.png",
+    role: "IT Manager",
+    image: "/assets/images/team/rohith1.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -10,35 +21,25 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Emma Johnson",
-    role: "UI/UX Designer, co-founder",
-    image: "/assets/images/team/team-2.jpg",
+    name: "Vishag Sreekumar",
+    role: "Web Developer",
+    image: "/assets/images/team/vishag.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
-  {
-    name: "Marta Laning",
-    role: "Web developer",
-    image: "/assets/images/team/team-4.jpg",
-    socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
-  {
-    name: "Marta Laning",
-    role: "Art director, designer",
-    image: "/assets/images/team/team-3.jpg",
-    socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
+  // {
+  //   name: "Marta Laning",
+  //   role: "Art director, designer",
+  //   image: "/assets/images/team/team-3.jpg",
+  //   socials: [
+  //     { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+  //     { platform: "Twitter", icon: "fa-twitter", url: "#" },
+  //     { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+  //   ],
+  // },
 ];
 export const teamMembers2 = [
   {
