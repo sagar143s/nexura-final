@@ -21,7 +21,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Vishag Sreekumar",
+    name: "Visakh Sreekumar",
     role: "Web Developer",
     image: "/assets/images/team/vishag.png",
     socials: [
