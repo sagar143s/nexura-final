@@ -2,6 +2,7 @@ import Header1 from "@/components/headers/Header1";
 import Home1 from "@/components/homes/home-1";
 import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
