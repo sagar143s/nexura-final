@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /api/
-Disallow: /private/
 Allow: /
-
 Sitemap: https://nexura.ae/sitemap.xml
