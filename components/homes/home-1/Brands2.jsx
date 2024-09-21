@@ -38,24 +38,24 @@ export default function Brands2() {
                 alt="Logo 3"
               />
             </a>
-            {/* <a href="https://www.example4.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://wpmoda.com" target="_blank" rel="noopener noreferrer">
               <Image
                 className="logo-grid-img"
-                src="/assets/images/clients-logos/logo-grid/logo-4-white.png"
-                width="122"
-                height="33"
+                src="/assets/images/clients-logos/logo-grid/wpmoda.png"
+                width="100"
+                height="43"
                 alt="Logo 4"
               />
             </a>
-            <a href="https://www.example5.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.example5.com" target="_blank" rel="noopener noreferrer">
               <Image
                 className="logo-grid-img"
-                src="/assets/images/clients-logos/logo-grid/logo-5-white.png"
+                src="/assets/images/clients-logos/logo-grid/peak.jpg"
                 width="100"
                 height="33"
                 alt="Logo 5"
-              />
-            </a> */}
+              /> */}
+            {/* </a>  */}
           </div>
         </div>
       </div>

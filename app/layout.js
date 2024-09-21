@@ -13,6 +13,8 @@ import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import Head from 'next/head';
 import { metadata } from './metadata'; 
+import TawkToChat from '../components/chat/TawkToChat';
+
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -92,6 +94,7 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className="appear-animate body">
+      <TawkToChat /> 
         {children}
         <noscript>
           <iframe
