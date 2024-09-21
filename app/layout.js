@@ -13,6 +13,7 @@ import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import Head from 'next/head';
 import { metadata } from './metadata'; 
+import { Analytics } from "@vercel/analytics/react"
 import TawkToChat from '../components/chat/TawkToChat';
 
 
