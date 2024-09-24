@@ -1,22 +1,23 @@
-// components/TawkToChat.js
+// components/WebBokoChat.js
 import { useEffect } from 'react';
 
-const TawkToChat = () => {
+const WebBokoChat = () => {
   useEffect(() => {
-    // Initialize the Tawk.to chat widget
-    var Tawk_API = Tawk_API || {};
-    var Tawk_LoadStart = new Date();
+    var WebBoko_API = WebBoko_API || {};
+    WebBoko_API.secret_key = 'bd100339d3d0597e7c2e57eb6507c6adc4ea9b9d3ac158c7999dd702d9c782c731186128c547da4cf57d9b7267b7b214';
+
     (function() {
       var s1 = document.createElement('script');
-      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+      var s0 = document.getElementsByTagName('script')[0];
       s1.async = true;
+      s1.src = 'https://nexura.ae';
       s1.charset = 'UTF-8';
       s1.setAttribute('crossorigin', '*');
-      document.head.appendChild(s1);
+      s0.parentNode.insertBefore(s1, s0);
     })();
   }, []);
 
   return null;
 };
 
-export default TawkToChat;
+export default WebBokoChat;

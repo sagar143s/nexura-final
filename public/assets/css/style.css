@@ -12737,3 +12737,103 @@ body::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+
+
+
+
+
+/* components/WebBokoLayout.css */
+.page-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2em;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 1.5em;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #27ae60;
+}
+
+.services-section h3 {
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-section li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #3498db;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
