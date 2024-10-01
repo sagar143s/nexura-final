@@ -95,7 +95,7 @@ export default function ContactDark() {
             {/* Inform Tip */}
             <div className="form-tip pt-30 pt-sm-20">
               <i className="icon-info size-16" />
-              All the fields are required. By sending the form you agree to the{" "}
+              sdsdsdAll the fields are required. By sending the form you agree tojhh the{" "}
               <a href="#">Terms &amp; Conditions</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </div>

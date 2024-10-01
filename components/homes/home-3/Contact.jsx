@@ -95,7 +95,7 @@ export default function Contact() {
             {/* Inform Tip */}
             <div className="form-tip pt-30 pt-sm-20">
               <i className="icon-info size-16" />
-              All the fields are required. By sending the form you agree to the{" "}
+             sadsd All the fields are required. By sending hbhbhthe form you agree to the{" "}
               <a href="#">Terms &amp; Conditions</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </div>

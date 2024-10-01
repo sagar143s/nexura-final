@@ -15,7 +15,6 @@ import Head from 'next/head';
 import { metadata } from './metadata'; 
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import TawkToChat from '../components/chat/TawkToChat';
 
 
 export default function RootLayout({ children }) {
@@ -96,7 +95,7 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body className="appear-animate body">
-      <TawkToChat /> 
+      {/* <TawkToChat />  */}
         {children}
         <noscript>
           <iframe

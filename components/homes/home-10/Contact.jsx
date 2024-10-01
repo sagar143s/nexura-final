@@ -118,8 +118,8 @@ export default function Contact() {
                 <div className="form-tip pt-20 pt-sm-0">
                   <i className="icon-info size-16" />
                   All the fields are required. By sending the form you agree to
-                  the <a href="#">Terms &amp; Conditions</a> and{" "}
-                  <a href="#">Privacy Policy</a>.
+                  the <a href="terms&condition">Terms &amp; Conditions</a> and{" "}
+                  <a href="privacypolicy">Privacy Policy</a>.
                 </div>
               </div>
               <div className="col-sm-6">
