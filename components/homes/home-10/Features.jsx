@@ -20,12 +20,12 @@ export default function Features() {
         <div className="row mb-100 mb-sm-80">
           <div className="col-sm-7 col-md-5">
             <div className="circle overflow-hidden">
-              <Image
+              {/* <Image
                 width={788}
                 height={280}
                 src="/assets/images/demo-strong/section-image-4.jpg"
                 alt="Image Description"
-              />
+              /> */}
             </div>
           </div>
         </div>

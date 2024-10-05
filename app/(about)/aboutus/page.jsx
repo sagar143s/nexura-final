@@ -19,10 +19,9 @@ const ParallaxContainer = dynamic(
   }
 );
 export const metadata = {
-  title:
-    "Brutalist About Dark || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Nexura IT Solutions | Dubai's Leading IT Experts",
+  description: "Nexura IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
+  keywords: "Nexura IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
 };
 export default function BrutalistAboutPageDark() {
   return (
@@ -95,7 +94,7 @@ export default function BrutalistAboutPageDark() {
                   >
                     <div className="col-5 offset-7 col-sm-4 offset-sm-8">
                       <Image
-                        src="/assets/images/demo-brutalist/section-image-1.jpg"
+                        src="/assets/images/demo-brutalist/dubai.png"
                         width={689}
                         height={855}
                         className="section-image-1"
@@ -110,7 +109,7 @@ export default function BrutalistAboutPageDark() {
                 className="page-section bg-dark-1 bg-dark-alpha-70 light-content bg-scroll pb-0 z-index-1"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/demo-brutalist/section-bg-2.jpg)",
+                    "url(/assets/images/demo-brutalist/section-bg-2.)",
                 }}
               >
                 <Banner />

@@ -36,7 +36,7 @@ export default function StrongContactPageDark() {
                 className="page-section bg-dark-alpha-30 light-content parallax-5"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/demo-strong/banner.png)",
+                    "url(/assets/images/demo-strong/contact.png)",
                 }}
                 id="home"
               >

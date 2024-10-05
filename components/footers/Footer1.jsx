@@ -13,8 +13,8 @@ export default function Footer1({ dark = false }) {
     >
       <div className="container">
         <div className="row pb-120 pb-sm-80 pb-xs-50">
-          <div className="col-md-4 col-lg-3 text-gray mb-sm-50">
-            <Link href={"/"} className="mb-30">
+          <div className="col-md-4 col-lg-3 text-gray mb-sm-50 d-flex justify-content-center flex-column align-items-center">
+            <Link href={"/"} className="mb-30 d-flex justify-content-center">
               <Image
                 src="/assets/images/logowhite.png"
                 width={180}
@@ -22,7 +22,6 @@ export default function Footer1({ dark = false }) {
                 className="light-mode-logo"
                 alt="Your Company Logo"
               />
-
               <Image
                 src="/assets/images/logowhite.png"
                 width={180}
@@ -31,20 +30,15 @@ export default function Footer1({ dark = false }) {
                 alt="Your Company Logo"
               />
             </Link>
-            <p>
-            601, B Block, Business Village, Deira Clock Tower             </p>
-            <div className="clearlinks">
-             
-             
-              {/* <strong>  : </strong> */}
-  <a href="tel:+971507052116">+971 507052116</a>
-  <br/>
-
-  <a href="tel:+971552949444">+971 552949444</a>
-
-
+            <p className="text-center">
+              601, B Block, Business Village, Deira Clock Tower
+            </p>
+            <div className="clearlinks text-center">
+              <a href="tel:+971507052116">+971 507052116</a>
+              <br />
+              <a href="tel:+971552949444">+971 552949444</a>
             </div>
-            <div className="clearlinks">
+            <div className="clearlinks text-center">
               <strong>EMAIL : </strong>
               <a href="mailto:info@nexura.ae">info@nexura.ae</a>
             </div>
@@ -88,11 +82,10 @@ export default function Footer1({ dark = false }) {
         </div>
         {/* Footer Text */}
         <div className="row text-gray">
-          <div className="col-md-4 col-lg-3">
-          <b>© {new Date().getFullYear()} Nexura IT Solutions</b>
+          <div className="col-md-4 col-lg-3 d-flex justify-content-center">
+            <b>© {new Date().getFullYear()} Nexura IT Solutions</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-            {/* <b>Based in London, United Kingdom.</b> */}
             {/* Back to Top Link */}
             <div className="local-scroll float-end mt-n20 mt-sm-10">
               <a href="#top" className="link-to-top">
