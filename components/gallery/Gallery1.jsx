@@ -17,8 +17,8 @@ export default function Gallery1({
               <Item
                 original={elm.src}
                 thumbnail={elm.src}
-                width={1350}
-                height={865}
+                width={500}
+                height={500}
               >
                 {({ ref, open }) => (
                   <div
@@ -30,9 +30,9 @@ export default function Gallery1({
                         ref={ref}
                         onClick={open}
                         src={elm.src}
-                        width={719}
-                        height={461}
-                        alt="Image Description"
+                        width={500}
+                        height={500}
+                        alt="photoshoot"
                       />
                     </a>
                   </div>
