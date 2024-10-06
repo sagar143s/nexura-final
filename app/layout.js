@@ -13,8 +13,6 @@ import "tippy.js/dist/tippy.css";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 import Head from 'next/head';
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import NewsLetter from "@/components/newsletterForms/Form1";
 
 export default function RootLayout({ children }) {
@@ -53,7 +51,7 @@ export default function RootLayout({ children }) {
     }
   }, []);
 
-  // Show newsletter after 2 seconds if it hasn't been shown before
+  // Show newsletter after 1 second if it hasn't been shown before
   useEffect(() => {
     const hasNewsletterShown = localStorage.getItem("newsletterShown");
 
@@ -61,7 +59,7 @@ export default function RootLayout({ children }) {
       const timer = setTimeout(() => {
         setShowNewsletter(true);
         localStorage.setItem("newsletterShown", "true");
-      }, 2000);
+      }, 1000); // Show after 1 second
 
       return () => clearTimeout(timer);
     }
@@ -78,7 +76,7 @@ export default function RootLayout({ children }) {
       // Reset inactivity timer
       inactivityTimeoutRef.current = setTimeout(() => {
         setShowNewsletter(false);
-      }, 15000); // 15 seconds
+      }, 15000); // Close after 15 seconds of inactivity
     };
 
     // Add event listeners for user activity
@@ -100,65 +98,46 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="no-mobile no-touch">
       <Head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-KQJXF9PJ');
-            `,
-          }}
-        />
-        {/* End Google Tag Manager */}
-
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&family=Poppins&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <body className="appear-animate body">
-        {/* Show background overlay and centered newsletter */}
-        {showNewsletter && (
+        {showNewsletter ? (
           <>
-            <div className="newsletter-overlay" />
-            <div className="center-newsletter">
+            {/* Semi-transparent background overlay */}
+            <div
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                background: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black background
+                zIndex: 10, // Above all other content
+              }}
+            />
+            {/* Centered newsletter popup */}
+            <div
+              style={{
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                zIndex: 20, // Above the overlay
+                padding: '20px',
+                background: 'white',
+                borderRadius: '10px',
+                boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
+                width: '300px', // Adjust the width as needed
+              }}
+            >
               <NewsLetter />
             </div>
           </>
-        )}
+        ) : null}
         {children}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KQJXF9PJ"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
       </body>
     </html>
   );
