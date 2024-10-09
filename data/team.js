@@ -20,6 +20,17 @@ export const teamMembers = [
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
+  
+  {
+    name: "Jerry George",
+    role: "Design Head",
+    image: "/assets/images/team/jerry.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
   {
     name: "Visakh Sreekumar",
     role: "Web Developer",
@@ -30,16 +41,36 @@ export const teamMembers = [
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
-  // {
-  //   name: "Marta Laning",
-  //   role: "Art director, designer",
-  //   image: "/assets/images/team/team-3.jpg",
-  //   socials: [
-  //     { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-  //     { platform: "Twitter", icon: "fa-twitter", url: "#" },
-  //     { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-  //   ],
-  // },
+  {
+    name: "Neethu Rajeev",
+    role: "Front End Developer",
+    image: "/assets/images/team/neethu.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
+    name: "Sourav Raj",
+    role: "Android Developer",
+    image: "/assets/images/team/sourav.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
+    name: "Ashik Ahamed",
+    role: "Creative Director",
+    image: "/assets/images/team/ashik.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
 ];
 export const teamMembers2 = [
   {
