@@ -17,14 +17,14 @@ export default function Header1Multipage({ links }) {
           <Image
             src="/assets/images/logowhite.png"
             alt="Your Company Logo"
-            width={250}
+            width={280}
             height={180}
             className="light-mode-logo"
           />
           <Image
             src="/assets/images/logo.png"
             alt="Your Company Logo"
-            width={250}
+            width={280}
             height={180}
             className="dark-mode-logo"
           />

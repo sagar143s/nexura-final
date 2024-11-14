@@ -3,19 +3,19 @@ export const testimonials = [
     quote: `هذه القالب جميل للغاية ويحتوي على خيارات جديدة رائعة. يتم تحديثه بشكل متكرر مما يمنحني جودة أعلى. الدعم هو من الأفضل الذي تعاملت معه على الإطلاق. سريع، مهذب، ومفيد للغاية!`,
     author: "Mohamed Ali",
     role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    image: "/assets/images/111.png",
   },
   {
     quote: `High professionalism and fast execution. I’m completely satisfied`,
     author: "Sara Ahmed",
     role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    image: "/assets/images/112.png",
   },
   {
     quote: `Amazing work and exceptional support. Highly recommended!`,
     author: "Hassan",
     role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    image: "/assets/images/113.png",
   },
 ];
 export const testimonials2 = [

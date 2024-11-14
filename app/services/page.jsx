@@ -85,7 +85,7 @@ export default function BrutalistServicesPageDark() {
 
                     <div className="col-lg-7">
                       <p className="mb-0">
-                      At Nexura IT Solutions, we specialize in delivering a full spectrum of IT services designed to elevate your business in today's competitive digital environment. From dynamic web development to custom Android and iOS apps, digital marketing strategies, SEO optimization, and more, our team is equipped to handle every aspect of your technology needs. Whether you're building from the ground up or scaling your digital presence, we are committed to helping you achieve sustainable growth and innovation. Trust Nexura IT Solutions to guide your business through the future of technology.
+                      At SquareCom IT Solutions, we specialize in delivering a full spectrum of IT services designed to elevate your business in today's competitive digital environment. From dynamic web development to custom Android and iOS apps, digital marketing strategies, SEO optimization, and more, our team is equipped to handle every aspect of your technology needs. Whether you're building from the ground up or scaling your digital presence, we are committed to helping you achieve sustainable growth and innovation. Trust SquareCom IT Solutions to guide your business through the future of technology.
                       </p>
                     </div>
                   </div>

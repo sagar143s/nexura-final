@@ -17,15 +17,15 @@ export default function Footer1({ dark = false }) {
             <Link href={"/"} className="mb-30 d-flex justify-content-center">
               <Image
                 src="/assets/images/logo.png"
-                width={250}
-                height={150}
+                width={280}
+                height={180}
                 className="light-mode-logo"
                 alt="Your Company Logo"
               />
               <Image
                 src="/assets/images/logo.png"
-                width={205}
-                height={150}
+                width={280}
+                height={180}
                 className="dark-mode-logo"
                 alt="Your Company Logo"
               />
@@ -40,7 +40,7 @@ export default function Footer1({ dark = false }) {
             </div>
             <div className="clearlinks text-center">
               <strong>EMAIL : </strong>
-              <a href="mailto:info@nexura.ae">info@nexura.ae</a>
+              <a href="mailto:info@squarecom.ae">info@squarecom.ae</a>
             </div>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2">

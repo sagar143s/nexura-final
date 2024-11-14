@@ -12,7 +12,7 @@ export default function Testimonials2() {
             <div className="row">
               <div className="col-md-10 offset-md-1 text-center">
               <h2 className="section-title mb-70 mb-sm-40">
-                  Nexura is trusted by
+                  Squarecom is trusted by
                   <span className="mark-decoration-1">&nbsp;50+</span>
                   customers.
                 </h2>

@@ -141,7 +141,7 @@ export default function Features() {
                   </div>
                   <div className="features-title">Uncompromised Accountability</div>
                   <div className="features-descr">
-                  Nexura IT Solutions guarantees a transparent and responsible approach, ensuring that your business goals are met with the utmost care and efficiency.                  </div>
+                  SquareCom IT Solutions guarantees a transparent and responsible approach, ensuring that your business goals are met with the utmost care and efficiency.                  </div>
                 </div>
               </SwiperSlide>
             </>

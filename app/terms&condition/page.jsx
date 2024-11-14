@@ -16,9 +16,9 @@ const ParallaxContainer = dynamic(
 );
 
 export const metadata = {
-  title: "Nexura IT Solutions | Dubai's Leading IT Experts",
-  description: "Nexura IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
-  keywords: "Nexura IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
+  title: "SquareCom IT Solutions | Dubai's Leading IT Experts",
+  description: "SquareCom IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
+  keywords: "SquareCom IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
 };
 
 
@@ -64,7 +64,7 @@ export default function TermsAndConditionsPageDark() {
                 <section className="terms-content">
                   <h2 className="font-alt mt-40 light-content">Introduction</h2>
                   <p className="light-content"> 
-                    Welcome to Nexura IT Solution. By accessing or using our
+                    Welcome to SquareCom IT Solution. By accessing or using our
                     services, you agree to comply with and be bound by the
                     following terms and conditions. If you disagree with any
                     part of these terms, you may not use our website or
@@ -73,7 +73,7 @@ export default function TermsAndConditionsPageDark() {
 
                   <h2 className="font-alt mt-40 light-content">General Conditions</h2>
                   <p className="light-content"> 
-                    Nexura IT Solution reserves the right to refuse service to
+                    SquareCom IT Solution reserves the right to refuse service to
                     anyone for any reason at any time. You understand that your
                     content (excluding credit card information) may be
                     transferred unencrypted and involve transmissions over
@@ -90,7 +90,7 @@ export default function TermsAndConditionsPageDark() {
 
                   <h2 className="font-alt mt-40 light-content">Limitations of Liability</h2>
                   <p className="light-content"> 
-                    Nexura IT Solution will not be liable for any indirect,
+                    SquareCom IT Solution will not be liable for any indirect,
                     special, or consequential damages arising out of or in
                     connection with the use of our services.
                   </p>
@@ -99,12 +99,12 @@ export default function TermsAndConditionsPageDark() {
                   <p className="light-content"> 
                     These terms and conditions are governed by and construed in
                     accordance with the laws of the jurisdiction in which
-                    Nexura IT Solution operates.
+                    SquareCom IT Solution operates.
                   </p>
 
                   <h2 className="font-alt mt-40 light-content">Changes to Terms</h2>
                   <p className="light-content"> 
-                    Nexura IT Solution reserves the right to update the terms
+                    SquareCom IT Solution reserves the right to update the terms
                     and conditions at any time. We will notify users of any
                     changes by posting the new terms on our website.
                   </p>
@@ -112,7 +112,7 @@ export default function TermsAndConditionsPageDark() {
                   <h2 className="font-alt mt-40 light-content">Contact Information</h2>
                   <p className="light-content"> 
                     If you have any questions about these Terms and Conditions,
-                    please contact us at contact@nexura.com.
+                    please contact us at contact@SquareCom.com.
                   </p>
                 </section>
               </div>

@@ -174,12 +174,7 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <Benefits />{" "}
       </section>
-      <section
-        className={`page-section pt-0 pb-0  ${dark ? "light-content" : ""}`}
-      >
-        {" "}
-        {dark ? <Testimonials2 /> : <Testimonials />}
-      </section>
+     
       <section className={`page-section  ${dark ? " light-content" : ""}`}>
         {dark ? <Brands2 /> : <Brands />}
       </section>
@@ -192,6 +187,7 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <Features />
       </section>
+     
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
@@ -316,6 +312,7 @@ export default function Home1({ onePage = false, dark = false }) {
       
         </div>
       </section> */}
+       
       <section
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{
@@ -325,6 +322,17 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <NewsLetter />
       </section>
+
+      {/* <section
+        className={`page-section pt-0 pb-0  ${dark ? "light-content" : ""}`}
+      >
+        {" "}
+        {dark ? <Testimonials2 /> : <Testimonials />}
+      </section> */}
+
+
+
+      
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

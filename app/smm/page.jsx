@@ -18,9 +18,9 @@ import { menuItemsDark } from "@/data/menu";
 import Smm from "@/components/smm/Gallery1";
 
 export const metadata = {
-  title: "Nexura IT Solutions | Dubai's Leading IT Experts",
-  description: "Nexura IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
-  keywords: "Nexura IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
+  title: "SquareCom IT Solutions | Dubai's Leading IT Experts",
+  description: "SquareCom IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
+  keywords: "SquareCom IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
 };
 export default function MainAboutPage1Dark() {
   return (
@@ -60,7 +60,7 @@ export default function MainAboutPage1Dark() {
                                 data-splitting="chars"
                               >
 
-                                <AnimatedText text="Expert Digital Marketing by Nexura IT Solutions" />
+                                <AnimatedText text="Expert Digital Marketing by SquareCom IT Solutions" />
                               </span>
                             </h1>
                           </div>

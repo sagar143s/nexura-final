@@ -19,9 +19,9 @@ const ParallaxContainer = dynamic(
   }
 );
 export const metadata = {
-  title: "Nexura IT Solutions | Dubai's Leading IT Experts",
-  description: "Nexura IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
-  keywords: "Nexura IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
+  title: "SquareCom IT Solutions | Dubai's Leading IT Experts",
+  description: "SquareCom IT Solutions offers innovative IT services in Dubai. We specialize in software development, networking, cybersecurity, and digital transformation. Partner with us for cutting-edge technology solutions tailored to your business.",
+  keywords: "SquareCom IT Solutions, Dubai IT company, IT services Dubai, software development Dubai, networking services UAE, cybersecurity Dubai, digital transformation UAE, cloud services Dubai, IT consulting Dubai, web development Dubai, mobile app development Dubai, IT support Dubai, managed IT services, technology solutions Dubai, custom software solutions, business IT solutions"
 };
 export default function BrutalistAboutPageDark() {
   return (
@@ -73,7 +73,7 @@ export default function BrutalistAboutPageDark() {
                         className="section-descr-large mb-60 mb-sm-40 wow fadeInUp"
                         data-wow-delay="0.1s"
                       >
-                      Nexura IT Solutions, based in Dubai and led by CEO Sultan Mohammad Hassan Alshehhi, is a full-service tech company specializing in development, networking, and support. We deliver innovative digital solutions that empower businesses with impactful technology and experiences.
+                      SquareCom IT Solutions, based in Dubai and led by CEO Sultan Mohammad Hassan Alshehhi, is a full-service tech company specializing in development, networking, and support. We deliver innovative digital solutions that empower businesses with impactful technology and experiences.
                       </p>
                       <ul
                         className="section-features font-alt clearlist uppercase wow fadeInUp"

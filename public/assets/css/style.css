@@ -3774,13 +3774,6 @@ html:not(.mobile) .wow-p {
   animation-name: fadeRotateIn;
 }
 
-/* ==============================
-   Classic menu bar
-   ============================== */
-
-/*
- * Logo (in navigation panel)
- */
 
 .nav-logo-wrap {
   position: absolute;
@@ -3792,7 +3785,7 @@ html:not(.mobile) .wow-p {
 .nav-logo-wrap .logo {
   display: flex;
   align-items: center;
-  max-width: 188px;
+  max-width: 280px;
   height: var(--menu-bar-height);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 }

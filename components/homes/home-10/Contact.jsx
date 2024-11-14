@@ -9,11 +9,11 @@ export default function Contact() {
       <div className="row mb-90 mb-sm-50">
         <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
         <h4 className="section-title-strong mb-40">
-  Get in Touch with <span className="font-alt">Nexura IT Solutions</span>
+  Get in Touch with <span className="font-alt">SquareCom IT Solutions</span>
 </h4>
 
           <p className="mb-0">
-          Need reliable IT support? Whether it’s development, networking, or troubleshooting, Nexura IT Solutions has the expertise you need.
+          Need reliable IT support? Whether it’s development, networking, or troubleshooting, SquareCom IT Solutions has the expertise you need.
           </p>
         </div>
         <div className="col-lg-7 offset-xl-1">

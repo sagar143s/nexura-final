@@ -68,7 +68,7 @@ export const qualities = [
   "We're Strategic",
   "We're Transparent",
   "We're Expert",
-  "We're Nexura IT Solutions",
+  "We're SquareCom IT Solutions",
 ];
 
 export const features = [
@@ -155,7 +155,7 @@ export const featuresData = [
     number: "01",
     title1: "Custom",
     title2: "Development",
-    desc: `At Nexura IT Solutions, we specialize in custom software and web development tailored to meet your business needs. Our team delivers innovative, scalable, and efficient solutions that drive growth and streamline operations.`,
+    desc: `At SquareCom IT Solutions, we specialize in custom software and web development tailored to meet your business needs. Our team delivers innovative, scalable, and efficient solutions that drive growth and streamline operations.`,
     iconPath:
     "M24 26.5c0 0 1-0.625 2.5-0.875 2.625-0.5 4.875-0.625 5.875 1.125 1.25 2.125 2.375 6.625 2.125 10.625-0.125 2.125-0.625 2.75-0.625 2.75s-1.875 1.25-5.875 0.875c-4.375-0.375-5-1.875-5-1.875s0.625-1.5 1-5.375 0-7.25 0-7.25zM19 35.625c-2.125 0.5-4.75 1.25-4.75 1.25s5.625-0.5 8-1.125c-0.5 2.625-1.25 4.25-1.25 4.25s-10.375 10-14.5 10c-3.5 0-6.5-8.5-6.5-18s3.25-18 6.5-18c4.375 0 13.25 7.125 16 12.125 0 0 0.375 2 0.25 4-1.25-0.625-3-1.25-5.5-1.75-3.5-0.75-5.25-0.375-5.25-0.375s2.25 0.5 7.125 2.125c1.875 0.625 2.75 1 3.625 1.25 0 0.375-0.125 0.875-0.125 1.25 0 0.625 0 1.25-0.125 1.875-0.625 0.25-1.875 0.75-3.5 1.125zM49.5 14c3.25 0 6.5 8.5 6.5 18s-3 18-6.5 18c-4.625 0-13-8.5-14-9.875 0 0 0.5-0.625 0.625-2.75v-1.125c2 0.875 8.75 1.625 8.75 1.625s-2.625-0.75-5-1.375c-1.625-0.5-3.125-1-3.75-1.25-0.125-1.375-0.25-2.875-0.5-4.125 2.125-1.375 8.625-4.25 8.625-4.25s-1.875 0.25-4.375 1.125c-1.75 0.625-3.625 1.375-4.625 1.75-0.375-1.25-0.875-2.25-1.25-3 0-0.125-0.125-0.5-0.125-0.5v-0.125c2.75-5 11.125-12.125 15.625-12.125z",
 },
@@ -173,7 +173,7 @@ export const featuresData = [
     number: "03",
     title1: "Search Engine",
     title2: "Optimization (SEO)",
-    desc: `At Nexura IT Solutions, we provide top-tier SEO services to ensure your website ranks high in search results. Our proven strategies help you attract the right audience, improve organic traffic, and grow your business online.`,
+    desc: `At SquareCom IT Solutions, we provide top-tier SEO services to ensure your website ranks high in search results. Our proven strategies help you attract the right audience, improve organic traffic, and grow your business online.`,
     iconPath:
       "M24 8c13.25 0 24 9.625 24 21.375 0 7.375-6 13.25-13.375 13.25h-4.75c-2.25 0-4 1.75-4 4 0 1.125 0.375 2.125 1 2.75s1.125 1.5 1.125 2.625c0 2.25-1.75 4-4 4-13.25 0-24-10.75-24-24s10.75-24 24-24zM9.375 32c2.25 0 4-1.75 4-4s-1.75-4-4-4-4 1.75-4 4 1.75 4 4 4zM17.375 21.375c2.25 0 4-1.75 4-4s-1.75-4-4-4-4 1.75-4 4 1.75 4 4 4zM30.625 21.375c2.25 0 4-1.75 4-4s-1.75-4-4-4-4 1.75-4 4 1.75 4 4 4zM38.625 32c2.25 0 4-1.75 4-4s-1.75-4-4-4-4 1.75-4 4 1.75 4 4 4z",
   },

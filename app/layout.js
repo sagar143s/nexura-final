@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       const timer = setTimeout(() => {
         setShowNewsletter(true);
         sessionStorage.setItem("newsletterShown", "true"); // Set session flag
-      }, 2000); // Show after 2 seconds
+      }, 4000); // Show after 2 seconds
 
       return () => clearTimeout(timer);
     }
@@ -136,8 +136,8 @@ export default function RootLayout({ children }) {
                 background: "white",
                 borderRadius: "10px",
                 boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
-                maxWidth: "90%", // Ensures responsiveness on small screens
-                width: "400px", // Default width
+                maxWidth: "100%", // Ensures responsiveness on small screens
+                width: "500px", // Default width
               }}
             >
               <NewsLetter closePopup={() => setShowNewsletter(false)} />

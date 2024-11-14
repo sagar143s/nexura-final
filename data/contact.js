@@ -13,9 +13,9 @@ export const contactItems = [
   {
     iconClass: "mi-email",
     title: "Email",
-    text: "info@nexura.ae",
+    text: "info@squarecom.ae",
     link: {
-      url: "mailto:info@nexura.ae",
+      url: "mailto:info@squarecom.ae",
       text: "Say Hello",
     },
   },

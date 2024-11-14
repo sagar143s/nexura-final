@@ -76,7 +76,7 @@ export default function Form1({ closePopup }) {
           Join Our Tech Community!
         </h3>
         <p style={{ color: '#ccc', fontSize: '0.9rem', marginBottom: '25px' }}>
-          Subscribe for the latest tech insights, updates, and exclusive offers from Nexura IT Solutions.
+          Subscribe for the latest tech insights, updates, and exclusive offers from SquareCom IT Solutions.
         </p>
 
         <form onSubmit={handleSubmit} style={{ marginBottom: '25px' }}>
