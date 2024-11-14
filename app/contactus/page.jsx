@@ -3,7 +3,6 @@ import Map from "@/components/common/Map";
 import Footer1 from "@/components/footers/Footer1";
 import Header1Multipage from "@/components/headers/Header1Multipage";
 import Contact from "@/components/homes/home-10/Contact";
-import Head from "next/head"; // Import Head component
 
 import { menuItemsDark } from "@/data/menu";
 
@@ -26,25 +25,8 @@ export const metadata = {
 export default function StrongContactPageDark() {
   return (
     <>
-     <Head>
-        {/* Tawk.to Script */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/6736742d4304e3196ae2b9ea/1icmbbkjc';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-              })();
-            `
-          }}
-        />
-      </Head>
+        
+
       <div className="theme-strong">
         <div className="dark-mode">
           <div className="page bg-dark-1" id="top">
