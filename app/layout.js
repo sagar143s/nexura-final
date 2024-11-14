@@ -3,7 +3,10 @@ import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
 import NewsLetter from "@/components/newsletterForms/Form1";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
+import {
+  parallaxMouseMovement,
+  parallaxScroll,
+} from "@/utlis/parallax";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 
@@ -18,6 +21,7 @@ import "../public/assets/css/styles.css";
 export default function RootLayout({ children }) {
   const path = usePathname();
   const [showNewsletter, setShowNewsletter] = useState(false);
+  const [showChat, setShowChat] = useState(false); // Chat visibility state
   const inactivityTimeoutRef = useRef(null);
 
   // Initialize animations and handle header changes on scroll
@@ -124,25 +128,47 @@ export default function RootLayout({ children }) {
           </>
         )}
 
-        {/* Button to Open Tawk.to Chat in New Tab */}
+        {/* Button to toggle Tawk.to chat */}
         <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
-          <a
-            href="https://tawk.to/chat/6736742d4304e3196ae2b9ea/1icmbbkjc"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setShowChat(!showChat)}
             style={{
               display: "inline-block",
               padding: "10px 20px",
               backgroundColor: "#0084ff",
               color: "white",
               borderRadius: "5px",
-              textDecoration: "none",
               fontWeight: "bold",
+              cursor: "pointer",
             }}
           >
-            Open Chat
-          </a>
+            {showChat ? "Close Chat" : "Open Chat"}
+          </button>
         </div>
+
+        {/* Embedded Chat Window */}
+        {showChat && (
+          <div
+            style={{
+              position: "fixed",
+              bottom: "80px", // Above the toggle button
+              right: "20px",
+              width: "300px", // Adjust width as needed
+              height: "400px", // Adjust height as needed
+              zIndex: 30,
+              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            <iframe
+              src="https://tawk.to/chat/6736742d4304e3196ae2b9ea/1icmbbkjc"
+              width="100%"
+              height="100%"
+              style={{ border: "none", borderRadius: "8px" }}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              title="Tawk.to Chat"
+            ></iframe>
+          </div>
+        )}
 
         {children}
       </body>
