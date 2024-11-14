@@ -30,11 +30,7 @@ export default function RootLayout({ children }) {
 
     const mainNav = document.querySelector(".main-nav");
     if (mainNav) {
-      if (mainNav.classList.contains("transparent")) {
-        mainNav.classList.add("js-transparent");
-      } else if (!mainNav.classList.contains("dark")) {
-        mainNav.classList.add("js-no-transparent-white");
-      }
+      mainNav.classList.add(mainNav.classList.contains("transparent") ? "js-transparent" : "js-no-transparent-white");
     }
 
     window.addEventListener("scroll", headerChangeOnScroll);
@@ -87,29 +83,27 @@ export default function RootLayout({ children }) {
     return () => window.removeEventListener("beforeunload", handleUnload);
   }, []);
 
+  // Dynamically load Tawk.to script on the client side
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://embed.tawk.to/6736742d4304e3196ae2b9ea/1icmbbkjc";
+      script.async = true;
+      script.charset = "UTF-8";
+      script.setAttribute("crossorigin", "*");
+
+      document.body.appendChild(script);
+
+      return () => document.body.removeChild(script); // Clean up script on unmount
+    }
+  }, []);
+
   return (
     <html lang="en">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
-        />
-        {/* Tawk.to Script */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/6736742d4304e3196ae2b9ea/1icmbbkjc';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-              })();
-            `,
-          }}
         />
       </Head>
       <body className="appear-animate body">
