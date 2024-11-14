@@ -1,19 +1,62 @@
 "use client";
+import { useState } from "react";
 import { contactItems } from "@/data/contact";
 import Image from "next/image";
-import React from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(null); // to hold success or error message
+
+  // Handle form input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Send data to the backend (Google Apps Script or custom endpoint)
+    try {
+      const response = await fetch("/api/submitContactForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.result === "success") {
+        setStatus("Your message has been sent successfully!");
+        setFormData({ name: "", email: "", message: "" }); // Reset form
+      } else {
+        setStatus("There was an error sending your message.");
+      }
+    } catch (error) {
+      setStatus("There was an error sending your message.");
+    }
+  };
+
   return (
     <div className="container">
       <div className="row mb-90 mb-sm-50">
         <div className="col-lg-5 col-xl-4 mb-md-90 mb-sm-50 wow fadeInUp">
-        <h4 className="section-title-strong mb-40">
-  Get in Touch with <span className="font-alt">SquareCom IT Solutions</span>
-</h4>
-
+          <h4 className="section-title-strong mb-40">
+            Get in Touch with <span className="font-alt">SquareCom IT Solutions</span>
+          </h4>
           <p className="mb-0">
-          Need reliable IT support? Whether it’s development, networking, or troubleshooting, SquareCom IT Solutions has the expertise you need.
+            Need reliable IT support? Whether it’s development, networking, or troubleshooting, SquareCom IT Solutions has the expertise you need.
           </p>
         </div>
         <div className="col-lg-7 offset-xl-1">
@@ -53,15 +96,13 @@ export default function Contact() {
               </div>
             ))}
             {/* End Contact Info Item */}
-
-            {/* End Contact Info Item */}
           </div>
         </div>
         {/* End Contact Info */}
         {/* Contact Form */}
         <div className="col-lg-7 offset-xl-1">
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
             className="form contact-form"
             id="contact_form"
           >
@@ -76,7 +117,8 @@ export default function Contact() {
                     id="name"
                     className="input-lg round form-control"
                     placeholder="Enter your name"
-                    pattern=".{3,100}"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                     aria-required="true"
                   />
@@ -92,7 +134,8 @@ export default function Contact() {
                     id="email"
                     className="input-lg round form-control"
                     placeholder="Enter your email"
-                    pattern=".{5,100}"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     aria-required="true"
                   />
@@ -108,7 +151,8 @@ export default function Contact() {
                 className="input-lg round form-control"
                 style={{ height: 130 }}
                 placeholder="Enter your message"
-                defaultValue={""}
+                value={formData.message}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -128,7 +172,6 @@ export default function Contact() {
                   <button
                     type="submit"
                     id="submit_btn"
-                    aria-controls="result"
                     className="submit_btn btn btn-mod btn-white btn-large btn-round btn-hover-anim align-middle"
                   >
                     <span> Send Message </span>
@@ -141,7 +184,9 @@ export default function Contact() {
               role="region"
               aria-live="polite"
               aria-atomic="true"
-            />
+            >
+              {status && <p>{status}</p>}
+            </div>
           </form>
         </div>
         {/* End Contact Form */}
