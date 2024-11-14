@@ -3,10 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
 import NewsLetter from "@/components/newsletterForms/Form1";
-import {
-  parallaxMouseMovement,
-  parallaxScroll,
-} from "@/utlis/parallax";
+import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
 
@@ -83,21 +80,6 @@ export default function RootLayout({ children }) {
     return () => window.removeEventListener("beforeunload", handleUnload);
   }, []);
 
-  // Dynamically load Tawk.to script on the client side
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const script = document.createElement("script");
-      script.src = "https://embed.tawk.to/6736742d4304e3196ae2b9ea/1icmbbkjc";
-      script.async = true;
-      script.charset = "UTF-8";
-      script.setAttribute("crossorigin", "*");
-
-      document.body.appendChild(script);
-
-      return () => document.body.removeChild(script); // Clean up script on unmount
-    }
-  }, []);
-
   return (
     <html lang="en">
       <Head>
@@ -141,6 +123,27 @@ export default function RootLayout({ children }) {
             </div>
           </>
         )}
+
+        {/* Button to Open Tawk.to Chat in New Tab */}
+        <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
+          <a
+            href="https://tawk.to/chat/6736742d4304e3196ae2b9ea/1icmbbkjc"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "10px 20px",
+              backgroundColor: "#0084ff",
+              color: "white",
+              borderRadius: "5px",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            Open Chat
+          </a>
+        </div>
+
         {children}
       </body>
     </html>
