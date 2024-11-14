@@ -1,25 +1,29 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import "swiper/css";
-import "../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
-import "swiper/css/effect-fade";
-import "react-modal-video/css/modal-video.css";
-import "photoswipe/dist/photoswipe.css";
+import Head from "next/head";
 import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-import "tippy.js/dist/tippy.css";
+import NewsLetter from "@/components/newsletterForms/Form1";
+import {
+  parallaxMouseMovement,
+  parallaxScroll,
+} from "@/utlis/parallax";
 import { init_wow } from "@/utlis/initWowjs";
 import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
-import Head from "next/head";
-import NewsLetter from "@/components/newsletterForms/Form1";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "jarallax/dist/jarallax.min.css";
+import "react-modal-video/css/modal-video.css";
+import "photoswipe/dist/photoswipe.css";
+import "tippy.js/dist/tippy.css";
+import "../public/assets/css/styles.css";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
   const [showNewsletter, setShowNewsletter] = useState(false);
   const inactivityTimeoutRef = useRef(null);
 
-  // Initialize WOW.js and handle header changes on scroll
+  // Initialize animations and handle header changes on scroll
   useEffect(() => {
     init_wow();
     parallaxMouseMovement();
@@ -36,69 +40,51 @@ export default function RootLayout({ children }) {
     window.addEventListener("scroll", headerChangeOnScroll);
     parallaxScroll();
 
-    return () => {
-      window.removeEventListener("scroll", headerChangeOnScroll);
-    };
+    return () => window.removeEventListener("scroll", headerChangeOnScroll);
   }, [path]);
 
   // Dynamically import Bootstrap JS on client-side
   useEffect(() => {
     if (typeof window !== "undefined") {
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module loaded
-      });
+      import("bootstrap/dist/js/bootstrap.esm");
     }
   }, []);
 
-  // Show newsletter after 2 seconds if it hasn't been shown in the session
+  // Show newsletter after a delay if it hasn't been shown this session
   useEffect(() => {
     const hasNewsletterShown = sessionStorage.getItem("newsletterShown");
 
     if (!hasNewsletterShown) {
       const timer = setTimeout(() => {
         setShowNewsletter(true);
-        sessionStorage.setItem("newsletterShown", "true"); // Set session flag
-      }, 4000); // Show after 2 seconds
+        sessionStorage.setItem("newsletterShown", "true");
+      }, 4000); // Show after 4 seconds
 
       return () => clearTimeout(timer);
     }
   }, []);
 
-  // Handle inactivity timeout to close the newsletter after 10 seconds of no mouse movement
+  // Handle inactivity to close newsletter after 10 seconds of no mouse movement
   useEffect(() => {
     const handleMouseMove = () => {
-      // Clear existing timeout
       if (inactivityTimeoutRef.current) {
         clearTimeout(inactivityTimeoutRef.current);
       }
-
-      // Reset inactivity timer for newsletter popup
       inactivityTimeoutRef.current = setTimeout(() => {
         setShowNewsletter(false);
-      }, 10000); // Close after 10 seconds of no mouse movement
+      }, 10000); // Close after 10 seconds of inactivity
     };
 
-    // Add event listener for mouse movement
     window.addEventListener("mousemove", handleMouseMove);
-
-    // Clean up event listeners on unmount
-    return () => {
-      clearTimeout(inactivityTimeoutRef.current);
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Clear the newsletter flag when the user closes or reloads the page
+  // Reset newsletter session flag when the page is closed or reloaded
   useEffect(() => {
-    const handleUnload = () => {
-      sessionStorage.removeItem("newsletterShown");
-    };
-
+    const handleUnload = () => sessionStorage.removeItem("newsletterShown");
     window.addEventListener("beforeunload", handleUnload);
 
-    return () => {
-      window.removeEventListener("beforeunload", handleUnload);
-    };
+    return () => window.removeEventListener("beforeunload", handleUnload);
   }, []);
 
   return (
@@ -108,8 +94,6 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
-
-
         {/* Tawk.to Script */}
         <script
           type="text/javascript"
@@ -124,16 +108,14 @@ export default function RootLayout({ children }) {
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);
               })();
-            `
+            `,
           }}
         />
-    
-
       </Head>
       <body className="appear-animate body">
         {showNewsletter && (
           <>
-            {/* Semi-transparent background overlay */}
+            {/* Overlay */}
             <div
               style={{
                 position: "fixed",
@@ -141,24 +123,24 @@ export default function RootLayout({ children }) {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                background: "rgba(0, 0, 0, 0.6)", // Semi-transparent black background
-                zIndex: 10, // Above all other content
+                background: "rgba(0, 0, 0, 0.6)",
+                zIndex: 10,
               }}
             />
-            {/* Centered newsletter popup */}
+            {/* Centered Newsletter Popup */}
             <div
               style={{
                 position: "fixed",
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                zIndex: 20, // Above the overlay
+                zIndex: 20,
                 padding: "20px",
                 background: "white",
                 borderRadius: "10px",
                 boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
-                maxWidth: "100%", // Ensures responsiveness on small screens
-                width: "500px", // Default width
+                maxWidth: "100%",
+                width: "500px",
               }}
             >
               <NewsLetter closePopup={() => setShowNewsletter(false)} />
