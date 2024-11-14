@@ -17,17 +17,19 @@ export default function Header1Multipage({ links }) {
           <Image
             src="/assets/images/logowhite.png"
             alt="Your Company Logo"
-            width={180}
-            height={50}
+            width={250}
+            height={180}
             className="light-mode-logo"
           />
           <Image
             src="/assets/images/logo.png"
             alt="Your Company Logo"
-            width={180}
-            height={50}
+            width={250}
+            height={180}
             className="dark-mode-logo"
           />
+          {/* <h4 style={{fontWeight:900}}>Square<br/>Com</h2> */}
+
         </Link>
       </div>
       {/* Mobile Menu Button */}

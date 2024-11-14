@@ -16,16 +16,16 @@ export default function Footer1({ dark = false }) {
           <div className="col-md-4 col-lg-3 text-gray mb-sm-50 d-flex justify-content-center flex-column align-items-center">
             <Link href={"/"} className="mb-30 d-flex justify-content-center">
               <Image
-                src="/assets/images/logowhite.png"
-                width={180}
-                height={50}
+                src="/assets/images/logo.png"
+                width={250}
+                height={150}
                 className="light-mode-logo"
                 alt="Your Company Logo"
               />
               <Image
-                src="/assets/images/logowhite.png"
-                width={180}
-                height={50}
+                src="/assets/images/logo.png"
+                width={205}
+                height={150}
                 className="dark-mode-logo"
                 alt="Your Company Logo"
               />
@@ -34,7 +34,7 @@ export default function Footer1({ dark = false }) {
               601, B Block, Business Village, Deira Clock Tower
             </p>
             <div className="clearlinks text-center">
-              <a href="tel:+971507052116">+971 507052116</a>
+              <a href="tel:+971507072116">+971 507072116</a>
               <br />
               <a href="tel:+971552949444">+971 552949444</a>
             </div>
@@ -83,7 +83,7 @@ export default function Footer1({ dark = false }) {
         {/* Footer Text */}
         <div className="row text-gray">
           <div className="col-md-4 col-lg-3 d-flex justify-content-center">
-            <b>© {new Date().getFullYear()} Nexura IT Solutions</b>
+            <b>© {new Date().getFullYear()} SquareCom IT Solutions</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
             {/* Back to Top Link */}

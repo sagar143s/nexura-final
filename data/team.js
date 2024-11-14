@@ -71,6 +71,41 @@ export const teamMembers = [
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
+  ,
+  {
+    name: "Muhammed Arshad",
+    role: "Flutter Developer",
+    image: "/assets/images/team/arshad1.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  ,
+  
+  
+  {
+    name: "Devika Sadanandan",
+    role: "Flutter Developer",
+    image: "/assets/images/team/devika.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  ,
+  {
+    name: "Anumol K Mani",
+    role: "Full stack Developer",
+    image: "/assets/images/team/anu.png",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
 ];
 export const teamMembers2 = [
   {
