@@ -19,7 +19,7 @@ export default function Brands2() {
     <div className="container position-relative">
       <div className="row">
         <div className="col-12 text-center">
-          <h1 className="section-title-tiny mb-30">Our Valued Partners</h1>
+        <h1 className="section-title-tiny mb-30 size-13" >Our Valued Partners</h1>
 
           {/* Logo marquee container */}
           <div style={{ overflow: "hidden", width: "100%", display: "flex", justifyContent: "center" }}>
