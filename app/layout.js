@@ -49,14 +49,14 @@ export default function RootLayout({ children }) {
 
   // Show newsletter after a delay if it hasn't been shown this session
   useEffect(() => {
-    const hasNewsletterShown = sessionStorage.getItem("newsletterShown");
-
+    const hasNewsletterShown = localStorage.getItem("newsletterShown");
+  
     if (!hasNewsletterShown) {
       const timer = setTimeout(() => {
         setShowNewsletter(true);
-        sessionStorage.setItem("newsletterShown", "true");
-      }, 4000); // Show after 4 seconds
-
+        localStorage.setItem("newsletterShown", "true");
+      }, 2000); // Show after 4 seconds
+  
       return () => clearTimeout(timer);
     }
   }, []);
@@ -129,22 +129,50 @@ export default function RootLayout({ children }) {
         )}
 
         {/* Button to toggle Tawk.to chat */}
-        <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
-          <button
-            onClick={() => setShowChat(!showChat)}
-            style={{
-              display: "inline-block",
-              padding: "10px 20px",
-              backgroundColor: "#0084ff",
-              color: "white",
-              borderRadius: "5px",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
-            {showChat ? "Close Chat" : "Open Chat"}
-          </button>
-        </div>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+<div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
+  <button
+    onClick={() => setShowChat(!showChat)}
+    style={{
+      display: "inline-flex",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "12px 10px", // Padding for the button
+      backgroundColor: "#0084FF", // Flat blue background
+      color: "white", // White text color
+      fontSize: "16px", // Adjusted font size for better readability
+      borderRadius: "50px", // Rounded corners for a smoother look
+      fontWeight: "bold",
+      cursor: "pointer",
+      border: "none",
+      boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)", // Subtle shadow for depth
+      transition: "transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease",
+      position: "relative",
+      minWidth: "80px", // Minimum width for consistent button size
+      height: "50px", // Height for a balanced button
+    }}
+    onMouseEnter={(e) => {
+      e.target.style.transform = "scale(1.05)"; // Slight scaling effect on hover
+      e.target.style.backgroundColor = "#0084FF"; // Darker blue on hover
+      e.target.style.boxShadow = "0px 6px 18px rgba(0, 0, 0, 0.2)";
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.transform = "scale(1)"; // Reset scale when mouse leaves
+      e.target.style.backgroundColor = "#0084FF"; // Reset color
+      e.target.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.1)";
+    }}
+  >
+    {showChat ? (
+      <span style={{ fontWeight: "bold", fontSize: "16px" }}>Close</span> // Close text
+    ) : (
+      <span style={{ fontWeight: "bold", fontSize: "16px" }}>Chat</span> // Chat text
+    )}
+  </button>
+</div>
+
+
+
 
         {/* Embedded Chat Window */}
         {showChat && (
