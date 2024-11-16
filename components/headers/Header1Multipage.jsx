@@ -51,7 +51,7 @@ export default function Header1Multipage({ links }) {
         </ul>
         <ul className="items-end clearlist">
           {/* Languages */}
-          {/* <LanguageSelect /> */}
+          <LanguageSelect />
           {/* End Languages */}
           <li>
             <Link href="/contactus" className="opacity-1 no-hover">

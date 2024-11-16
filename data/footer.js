@@ -1,13 +1,13 @@
 export const footerLinks = [
   { name: "Privacy Policy", path: "#" },
   { name: "Terms & Conditions", path: "#" },
-  { name: "Presskit", path: "#" },
+  // { name: "Presskit", path: "#" },
 ];
 
 export const footerLinks2 = [
   { text: "Privacy Policy", href: "#" },
   { text: "Terms & Conditions", href: "#" },
-  { text: "Presskit", href: "#" },
+  // { text: "Presskit", href: "#" },
   { text: "Credits", href: "#" },
 ];
 

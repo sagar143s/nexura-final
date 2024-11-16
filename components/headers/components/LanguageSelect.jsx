@@ -26,15 +26,11 @@ export default function LanguageSelect() {
           </a>
         </li>
         <li>
-          <a href="#" onClick={() => handleLanguageSelect("Fr")}>
-            French
+          <a href="#" onClick={() => handleLanguageSelect("Ar")}>
+            Arabic
           </a>
         </li>
-        <li>
-          <a href="#" onClick={() => handleLanguageSelect("De")}>
-            German
-          </a>
-        </li>
+       
       </ul>
     </li>
   );
