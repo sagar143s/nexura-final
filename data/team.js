@@ -12,7 +12,7 @@ export const teamMembers = [
   },
   {
     name: "Rohith Sagar",
-    role: "Project Manager",
+    role: "Full Stack Developer",
     image: "/assets/images/team/rohith1.png",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
