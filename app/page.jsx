@@ -44,6 +44,19 @@ export default function Home1MainDemoMultiPageDark() {
             tp('register', 'w59XOlGTvbTZs1im');`}
       </script>
 
+      {/* Trustpilot Invitation Script */}
+      <script>
+        {`document.addEventListener('DOMContentLoaded', function() {
+          const trustpilot_invitation = {
+            recipientEmail: 'john@gmail.com',
+            recipientName: 'John',
+            referenceId: 'Order_123',
+            source: 'InvitationScript',
+          };
+          tp('createInvitation', trustpilot_invitation);
+        });`}
+      </script>
+
       <div className="dark-mode">
         <div className="theme-main">
           <div className="page bg-dark-1" id="top">
