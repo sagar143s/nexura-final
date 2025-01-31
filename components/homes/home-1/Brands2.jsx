@@ -128,8 +128,8 @@ export default function Brands2() {
                     <div style={logoContainerStyle}>
                       <Image
                         src="/assets/images/clients-logos/logo-grid/smart.png"
-                        width="150"
-                        height="80"
+                        width="70"
+                        height="70"
                         alt="Joy Refinery"
                       />
                     </div>
