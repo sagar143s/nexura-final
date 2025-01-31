@@ -124,6 +124,16 @@ export default function Brands2() {
                       />
                     </div>
                   </a>
+                  <a href="https://smarttimegold.ae" target="_blank" rel="noopener noreferrer">
+                    <div style={logoContainerStyle}>
+                      <Image
+                        src="/assets/images/clients-logos/logo-grid/smart.png"
+                        width="150"
+                        height="80"
+                        alt="Joy Refinery"
+                      />
+                    </div>
+                  </a>
                 </React.Fragment>
               ))}
             </div>
