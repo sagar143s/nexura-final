@@ -34,7 +34,7 @@ export default function Brands2() {
               {/* Duplicate Logo items for continuous scrolling */}
               {[...Array(2)].map((_, idx) => (
                 <React.Fragment key={idx}>
-                  <a href="https://taseesrealestate.ae" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://taseesrealestate.ae" target="_blank" rel="noopener noreferrer">
                     <div style={logoContainerStyle}>
                       <Image
                         src="/assets/images/clients-logos/logo-grid/ts.png"
@@ -43,7 +43,7 @@ export default function Brands2() {
                         alt="Tasees"
                       />
                     </div>
-                  </a>
+                  </a> */}
                   <a href="https://bullandbearz.com" target="_blank" rel="noopener noreferrer">
                     <div style={logoContainerStyle}>
                       <Image
@@ -131,6 +131,26 @@ export default function Brands2() {
                         width="70"
                         height="70"
                         alt="Joy Refinery"
+                      />
+                    </div>
+                  </a>
+                  <a href="https://taseesrealestate.ae" target="_blank" rel="noopener noreferrer">
+                    <div style={logoContainerStyle}>
+                      <Image
+                        src="/assets/images/clients-logos/logo-grid/tasees.png"
+                        width="70"
+                        height="70"
+                        alt="Joy Refinery"
+                      />
+                    </div>
+                  </a>
+                  <a href="https://bullandbearz.com" target="_blank" rel="noopener noreferrer">
+                    <div style={logoContainerStyle}>
+                      <Image
+                        src="/assets/images/clients-logos/logo-grid/bb.png"
+                        width="150"
+                        height="80"
+                        alt="Bull and Bearz"
                       />
                     </div>
                   </a>
