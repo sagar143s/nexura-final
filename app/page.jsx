@@ -43,6 +43,8 @@ export default function Home1MainDemoMultiPageDark() {
             f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
             tp('register', 'w59XOlGTvbTZs1im');`}
       </script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
+     crossorigin="anonymous"></script>
 
       {/* Trustpilot Invitation Script */}
       <script>
