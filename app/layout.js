@@ -92,6 +92,8 @@ export default function RootLayout({ children }) {
     rel="stylesheet"
   />
   <meta name="google-adsense-account" content="ca-pub-8428150181572011" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
+     crossorigin="anonymous"></script>
 </Head>
       <body className="appear-animate body">
         {showNewsletter && (
