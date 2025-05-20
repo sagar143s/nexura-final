@@ -26,15 +26,7 @@ export const metadata = {
 export default function Home1MainDemoMultiPageDark() {
   return (
     <>
-      {/* Google Tag Manager */}
-      <script>
-        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W594CQK8');`}
-      </script>
-      {/* End Google Tag Manager */}
+     
 
       {/* Trustpilot Script */}
       <script>
@@ -43,8 +35,7 @@ export default function Home1MainDemoMultiPageDark() {
             f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
             tp('register', 'w59XOlGTvbTZs1im');`}
       </script>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
-     crossorigin="anonymous"></script>
+     
 
       {/* Trustpilot Invitation Script */}
       <script>
