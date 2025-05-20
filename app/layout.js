@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import Head from "next/head";
+import Script from "next/script";
 import { usePathname } from "next/navigation";
 import NewsLetter from "@/components/newsletterForms/Form1";
 import {
@@ -21,84 +21,71 @@ import "../public/assets/css/styles.css";
 export default function RootLayout({ children }) {
   const path = usePathname();
   const [showNewsletter, setShowNewsletter] = useState(false);
-  const [showChat, setShowChat] = useState(false); // Chat visibility state
+  const [showChat, setShowChat] = useState(false);
   const inactivityTimeoutRef = useRef(null);
 
-  // Initialize animations and handle header changes on scroll
   useEffect(() => {
     init_wow();
     parallaxMouseMovement();
+    parallaxScroll();
 
-    const mainNav = document.querySelector(".main-nav");
-    if (mainNav) {
-      mainNav.classList.add(mainNav.classList.contains("transparent") ? "js-transparent" : "js-no-transparent-white");
+    const nav = document.querySelector(".main-nav");
+    if (nav) {
+      nav.classList.add(
+        nav.classList.contains("transparent") ? "js-transparent" : "js-no-transparent-white"
+      );
     }
 
     window.addEventListener("scroll", headerChangeOnScroll);
-    parallaxScroll();
-
     return () => window.removeEventListener("scroll", headerChangeOnScroll);
   }, [path]);
 
-  // Dynamically import Bootstrap JS on client-side
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("bootstrap/dist/js/bootstrap.esm");
     }
   }, []);
 
-  // Show newsletter after a delay if it hasn't been shown this session
   useEffect(() => {
-    const hasNewsletterShown = localStorage.getItem("newsletterShown");
-  
-    if (!hasNewsletterShown) {
+    const shown = sessionStorage.getItem("newsletterShown");
+    if (!shown) {
       const timer = setTimeout(() => {
         setShowNewsletter(true);
-        localStorage.setItem("newsletterShown", "true");
-      }, 2000); // Show after 4 seconds
-  
+        sessionStorage.setItem("newsletterShown", "true");
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, []);
 
-  // Handle inactivity to close newsletter after 10 seconds of no mouse movement
   useEffect(() => {
     const handleMouseMove = () => {
-      if (inactivityTimeoutRef.current) {
-        clearTimeout(inactivityTimeoutRef.current);
-      }
+      if (inactivityTimeoutRef.current) clearTimeout(inactivityTimeoutRef.current);
       inactivityTimeoutRef.current = setTimeout(() => {
         setShowNewsletter(false);
-      }, 10000); // Close after 10 seconds of inactivity
+      }, 10000);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Reset newsletter session flag when the page is closed or reloaded
-  useEffect(() => {
-    const handleUnload = () => sessionStorage.removeItem("newsletterShown");
-    window.addEventListener("beforeunload", handleUnload);
-
-    return () => window.removeEventListener("beforeunload", handleUnload);
-  }, []);
-
   return (
     <html lang="en">
-      <Head>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
-  <meta name="google-adsense-account" content="ca-pub-8428150181572011" />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
-     crossorigin="anonymous"></script>
-</Head>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"
+        />
+        <meta name="google-adsense-account" content="ca-pub-8428150181572011" />
+      </head>
       <body className="appear-animate body">
+        {/* Newsletter Popup */}
         {showNewsletter && (
           <>
-            {/* Overlay */}
             <div
               style={{
                 position: "fixed",
@@ -110,7 +97,6 @@ export default function RootLayout({ children }) {
                 zIndex: 10,
               }}
             />
-            {/* Centered Newsletter Popup */}
             <div
               style={{
                 position: "fixed",
@@ -119,11 +105,11 @@ export default function RootLayout({ children }) {
                 transform: "translate(-50%, -50%)",
                 zIndex: 20,
                 padding: "20px",
-                background: "white",
+                background: "#fff",
                 borderRadius: "10px",
                 boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
-                maxWidth: "100%",
                 width: "500px",
+                maxWidth: "100%",
               }}
             >
               <NewsLetter closePopup={() => setShowNewsletter(false)} />
@@ -131,61 +117,49 @@ export default function RootLayout({ children }) {
           </>
         )}
 
-        {/* Button to toggle Tawk.to chat */}
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+        {/* Chat Button */}
+        <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
+          <button
+            onClick={() => setShowChat(!showChat)}
+            style={{
+              display: "inline-flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "12px 10px",
+              backgroundColor: "#0084FF",
+              color: "white",
+              fontSize: "16px",
+              borderRadius: "50px",
+              fontWeight: "bold",
+              cursor: "pointer",
+              border: "none",
+              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)",
+              transition: "transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease",
+              minWidth: "80px",
+              height: "50px",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow = "0px 6px 18px rgba(0, 0, 0, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.1)";
+            }}
+          >
+            {showChat ? "Close" : "Chat"}
+          </button>
+        </div>
 
-<div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 30 }}>
-  <button
-    onClick={() => setShowChat(!showChat)}
-    style={{
-      display: "inline-flex",
-      justifyContent: "center",
-      alignItems: "center",
-      padding: "12px 10px", // Padding for the button
-      backgroundColor: "#0084FF", // Flat blue background
-      color: "white", // White text color
-      fontSize: "16px", // Adjusted font size for better readability
-      borderRadius: "50px", // Rounded corners for a smoother look
-      fontWeight: "bold",
-      cursor: "pointer",
-      border: "none",
-      boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)", // Subtle shadow for depth
-      transition: "transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease",
-      position: "relative",
-      minWidth: "80px", // Minimum width for consistent button size
-      height: "50px", // Height for a balanced button
-    }}
-    onMouseEnter={(e) => {
-      e.target.style.transform = "scale(1.05)"; // Slight scaling effect on hover
-      e.target.style.backgroundColor = "#0084FF"; // Darker blue on hover
-      e.target.style.boxShadow = "0px 6px 18px rgba(0, 0, 0, 0.2)";
-    }}
-    onMouseLeave={(e) => {
-      e.target.style.transform = "scale(1)"; // Reset scale when mouse leaves
-      e.target.style.backgroundColor = "#0084FF"; // Reset color
-      e.target.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.1)";
-    }}
-  >
-    {showChat ? (
-      <span style={{ fontWeight: "bold", fontSize: "16px" }}>Close</span> // Close text
-    ) : (
-      <span style={{ fontWeight: "bold", fontSize: "16px" }}>Chat</span> // Chat text
-    )}
-  </button>
-</div>
-
-
-
-
-        {/* Embedded Chat Window */}
+        {/* Embedded Chat */}
         {showChat && (
           <div
             style={{
               position: "fixed",
-              bottom: "80px", // Above the toggle button
+              bottom: "80px",
               right: "20px",
-              width: "300px", // Adjust width as needed
-              height: "400px", // Adjust height as needed
+              width: "300px",
+              height: "400px",
               zIndex: 30,
               boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
             }}
@@ -195,13 +169,21 @@ export default function RootLayout({ children }) {
               width="100%"
               height="100%"
               style={{ border: "none", borderRadius: "8px" }}
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
               title="Tawk.to Chat"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
             ></iframe>
           </div>
         )}
 
         {children}
+
+        {/* Google Adsense */}
+        <Script
+          strategy="afterInteractive"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
