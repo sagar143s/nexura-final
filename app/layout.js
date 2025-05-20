@@ -87,11 +87,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="google-adsense-account" content="ca-pub-8428150181572011" />
+</Head>
       <body className="appear-animate body">
         {showNewsletter && (
           <>
