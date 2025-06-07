@@ -177,19 +177,19 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        {/* Google Adsense */}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
-     crossorigin="anonymous"></script>
+      <Script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S1XP4S1RS7"
+/>
 
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S1XP4S1RS7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S1XP4S1RS7');
-</script>
+<Script id="google-analytics">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S1XP4S1RS7');
+  `}
+</Script>
       </body>
     </html>
   );
