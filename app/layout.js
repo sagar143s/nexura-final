@@ -178,12 +178,8 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* Google Adsense */}
-        <Script
-          strategy="afterInteractive"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
-          crossOrigin="anonymous"
-        />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8428150181572011"
+     crossorigin="anonymous"></script>
       </body>
     </html>
   );
